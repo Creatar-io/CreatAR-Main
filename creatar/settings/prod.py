@@ -1,6 +1,6 @@
 import os
 
-from externship.settings.base import *
+from creatar.settings.base import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

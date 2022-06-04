@@ -8,7 +8,7 @@ class PodcatAdmin(admin.ModelAdmin):
     list_display = (
         "title",
         "streamed_on",
-        "stream_link"
+        "stream_link",
         "created_at",
     )
     search_fields = ("title", "streamed_on")

@@ -8,6 +8,7 @@
 {% block stlyesheets %}
 <link rel="stylesheet" href="{% static '/css/home.css' %}">
 <link rel="stylesheet" href="{% static '/css/media.css' %}">
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -430,10 +431,23 @@
         </div>
     </div>
 </section>
+<section id="blogs" class="creatARhow px-4 py-2">
+    <div class="container mt-5 mb-3">
+        <h2 style="color: white;">Dibyasom's Blogs</h2>
+        <div class="row" id="blog-content">
+            
+        </div>
+    </div>
+</section>
 
 <!-- Render Contact -->
 {% include 'partials/contact.html' %}
 <!-- Render footer -->
 {% include 'partials/footer.html' %}
 
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static '/js/getblogs.js' %}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endblock %}

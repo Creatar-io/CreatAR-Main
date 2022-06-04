@@ -2,7 +2,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    server_name _ your_domain;
+    server_name _;
 
     location /health {
             access_log off;
