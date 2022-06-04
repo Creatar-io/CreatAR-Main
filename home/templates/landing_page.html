@@ -82,15 +82,20 @@
     <div class="container-fluid  py-5">
         <div class="row text-center pt-5">
             <div class="col-12 trustedhead">
-                100 + Creatars Profile
+                100 + Creators' Profile
                 <span class="dark-text-color">| 20 + Brand Requirements</span>
             </div>
             <div class="col-12 py-5 linetalent">
                 <div class="row">
                     <div class="owl-carousel owl-carousel2 owl-theme">
+                        {% for i in '0123456789'|make_list %}
                         <div class="item">
-                            <img src="{% static '/img/globaltalentuser.png' %}" class="usercard shadow w-100" alt="">
+                            <figure class="figure">
+                                <img src="https://fakeface.rest/face/view?minimum_age=2{{i}}" class="figure-img img-fluid rounded" alt="{{i}}">
+                                <figcaption class="figure-caption">AR Creator.</figcaption>
+                              </figure>
                         </div>
+                        {% endfor %}
                     </div>
 
 
@@ -102,7 +107,7 @@
         </div>
     </div>
 </section>
-<section id="youtube" class="mixbgactive">
+<!-- <section id="youtube" class="mixbgactive">
     <div class="container ">
         <div class="row py-lg-5 py-md-4 py-1 text-center">
             <div class="col-12 text-center">
@@ -137,6 +142,14 @@
                 <a href="" class="btn1hero  px-5 py-2">View all</a>
             </div>
 
+        </div>
+    </div>
+</section> -->
+<section id="blogs" class="creatARhow px-4 py-2">
+    <div class="container mt-5 mb-3">
+        <h2 style="color: white;">Dibyasom's Blogs</h2>
+        <div class="row" id="blog-content">
+            
         </div>
     </div>
 </section>
@@ -428,14 +441,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section id="blogs" class="creatARhow px-4 py-2">
-    <div class="container mt-5 mb-3">
-        <h2 style="color: white;">Dibyasom's Blogs</h2>
-        <div class="row" id="blog-content">
-            
         </div>
     </div>
 </section>
