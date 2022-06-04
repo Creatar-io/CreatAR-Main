@@ -1,0 +1,71 @@
+<!-- Load all static content -->
+{% load static %}
+
+<section class="contactbg py-5">
+    <div class="container-fluid px-lg-5  px-md-4 px-4">
+        <div class="row contactboxbg p-lg-5 p-md-4 px-2 pt-4">
+            <div class="col-lg-6 col-md-6 col-12 px-lg-5 px-md-3 px-2">
+                <div class="contacthead">
+                    Contact us
+                </div>
+                <div class="contactdets pt-3">
+                    For any queries or requests, feel free to reachout to us using the below menthined contact details
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-lg-2 col-md-2 col-3">
+                        <img src="{% static '/img/contactemail.svg' %}" alt="">
+                    </div>
+                    <div class="col-9 col-lg-10 col-md-10 text-start pt-3 contactcontact">
+                        r@creatar.io
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-lg-2 col-md-2 col-3">
+                        <img src="{% static '/img/contactmob.svg' %}" alt="">
+                    </div>
+                    <div class="col-9 col-lg-10 col-md-10  text-start pt-3 contactcontact">
+                        +91 9811377592
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-lg-2 col-md-2 col-3">
+                        <img src="{% static '/img/contactdiscord.svg' %}" alt="">
+                    </div>
+                    <div class="col-9 col-lg-10 col-md-10 text-start pt-3 contactcontact">
+                        discord ink
+                    </div>
+                </div>
+                <div class="pt-4 text-center text-lg-start text-md-start">
+                    <a href="" class="text-decoration-none ps-2"> <img src="{% static '/img/contactlinkedin.svg' %}" alt=""> </a>
+                    <a href="" class="text-decoration-none ps-2"> <img src="{% static '/img/contactfb.svg' %}" alt=""> </a>
+                    <a href="" class="text-decoration-none ps-2"> <img src="{% static '/img/contactinsta.svg' %}" alt=""> </a>
+                    <a href="" class="text-decoration-none ps-2"> <img src="{% static '/img/contactyt.svg' %}" alt=""> </a>
+                    <a href="" class="text-decoration-none ps-2"> <img src="{% static '/img/contacttwitter.svg' %}" alt=""> </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 px-lg-5 py-5 px-md-3 px-2">
+                <div class="contactcard p-lg-5 p-md-4 p-3">
+                    <form>
+                        <div class="mb-4">
+                            <label for="fullname" class="contactlabel">Full Name<span class="required">*</span></label>
+                            <input type="text" placeholder="Enter full name" class="contactinput" id="fullname">
+                            
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="contactlabel">Email<span class="required">*</span></label>
+                            <input type="email" placeholder="Enter your email" class="contactinput" id="email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="contactlabel">Message<span class="required">*</span></label>
+                            <input type="text" placeholder="Tell us how can we help you?
+                            " class="contactinput" id="message">
+                        </div>
+
+                        <button type="submit" class="px-5 py-2 btncontact">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "social_django",
     # Add your modules here
     "core",
+    "home",
 ]
 
 REST_FRAMEWORK = {

@@ -1,0 +1,634 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .stephead {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+      }
+    .arbenefithead {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 25px;
+        color: #2E3555;
+      }
+      
+      .arbenefitsub {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #2E3555;
+      }
+    .joinanimation{
+        display:none;
+    }
+    .meethead {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+      }
+      
+      .meetsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+      }
+      
+    .jdlogo {
+        position: absolute;
+        top: -40px;
+        left: 1rem;
+       
+    }
+    .jdlogo img{
+        width: 100%;
+    }
+
+    .jdsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    .jdhead {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    .herohead {
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 55px;
+        color: #ffffff;
+    }
+
+    .aboutcreatAR {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 60px;
+        color: #2e3555;
+    }
+
+    .joinanimation {
+        display: none;
+    }
+
+    .v-effect-link li {
+        display: inline-block;
+        width: 48%;
+
+    }
+
+    .v-effect-link {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .v-effect-link li {
+        counter-increment: steps;
+    }
+
+    .v-effect-link li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FA9F71;
+    }
+
+    .stepshead {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-left: 10px solid #FA9F71;
+    }
+
+    .stepsheadbrand {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-right: 10px solid #FFDC5F;
+    }
+
+    .benefitsARsub {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FA9F71;
+
+    }
+
+    .benefitsBrandsub {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FFDC5F;
+
+    }
+
+
+    .brandlink li {
+        display: inline-block;
+        width: 48%;
+
+    }
+
+    .brandlink {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .brandlink li {
+        counter-increment: steps;
+    }
+
+    .brandlink li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FFDC5F;
+    }
+
+    .contactbg {
+        background: url("/static/img/contactbg.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: auto 100%;
+    }
+
+    .mixbgactive {
+        background: url("/static/img/mixbgactive.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+    .stephead {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+      }
+    .arbenefithead {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 31px;
+        color: #2E3555;
+      }
+      
+      .arbenefitsub {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #2E3555;
+      }
+    .joinanimation{
+        display:none;
+    }
+    .meethead {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+      }
+      
+      .meetsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+      }
+      
+    .jdlogo {
+        position: absolute;
+        top: -90px;
+        left: 2.5rem;
+    }
+
+    .jdsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    .jdhead {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    .herohead {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 85px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .aboutcreatAR {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 70px;
+
+        color: #2e3555;
+    }
+
+    .joinanimation {
+        display: block;
+    }
+
+    .v-effect-link li {
+        display: inline-block;
+        width: 49%;
+
+    }
+
+    .v-effect-link {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .v-effect-link li {
+        counter-increment: steps;
+    }
+
+    .v-effect-link li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FA9F71;
+    }
+
+    .stepshead {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-left: 10px solid #FA9F71;
+    }
+
+    .stepsheadbrand {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-right: 10px solid #FFDC5F;
+    }
+
+    .benefitsARsub {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FA9F71;
+
+    }
+
+    .benefitsBrandsub {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FFDC5F;
+
+    }
+
+
+    .brandlink li {
+        display: inline-block;
+        width: 49%;
+
+    }
+
+    .brandlink {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .brandlink li {
+        counter-increment: steps;
+    }
+
+    .brandlink li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FFDC5F;
+    }
+
+    .contactbg {
+        background: url("/static/img/contactbg.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .mixbgactive {
+        background: url("/static/img/mixbgactive.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .stephead {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+      }
+    .arbenefithead {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 31px;
+        color: #2E3555;
+      }
+      
+      .arbenefitsub {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #2E3555;
+      }
+    .joinanimation{
+        display:block;
+    }
+    .meethead {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+      }
+      
+      .meetsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 40px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+      }
+      
+    .jdlogo {
+        position: absolute;
+        top: -90px;
+        left: 5.5rem;
+    }
+
+    .jdsub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    .jdhead {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    .herohead {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 85px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .aboutcreatAR {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 70px;
+
+        color: #2e3555;
+    }
+
+    .joinanimation {
+        display: block;
+    }
+
+    .v-effect-link li {
+        display: inline-block;
+        width: 24%;
+
+    }
+
+    .v-effect-link {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .v-effect-link li {
+        counter-increment: steps;
+    }
+
+    .v-effect-link li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FA9F71;
+    }
+
+    .stepshead {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-left: 10px solid #FA9F71;
+    }
+
+    .stepsheadbrand {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        /* or 125% */
+
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+        border-right: 10px solid #FFDC5F;
+    }
+
+    .benefitsARsub {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FA9F71;
+
+    }
+
+    .benefitsBrandsub {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.1em;
+
+        color: #2E3555;
+        border-left: 10px solid #FFDC5F;
+
+    }
+
+
+    .brandlink li {
+        display: inline-block;
+        width: 24%;
+
+    }
+
+    .brandlink {
+        list-style: none;
+        counter-reset: steps;
+    }
+
+    .brandlink li {
+        counter-increment: steps;
+    }
+
+    .brandlink li::before {
+        content: "0"counter(steps) "-";
+        height: 1.2em;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        color: #FFDC5F;
+    }
+
+    .contactbg {
+        background: url("/static/img/contactbg.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+    }
+
+    .mixbgactive {
+        background: url("/static/img/mixbgactive.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+    }
+}
