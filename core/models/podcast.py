@@ -9,30 +9,16 @@ class Podcast(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
     # Associate Moderator User
-    moderator = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        default=1,
-        related_name="moderated_organisations",
-    )
+    streamed_on = models.DateTimeField(auto_now_add=True, blank=True)
 
-    name = models.CharField(max_length=100)
-    uniquename = models.CharField(max_length=100, blank=True, default="")
-    uuid = models.CharField(max_length=64)
-    website_url = models.URLField()
-    display_image = models.FileField()
-    github_id = models.CharField(max_length=50)
-    ideal_tech_stack = models.CharField(max_length=250)
-    about = models.TextField(max_length=250, default="We're adapting the cutting edge technologies, and looking out for skilled professionals.")
-
-    last_date_4_submission = models.DateField(default=datetime.datetime(2022, 4, 30))
+    title = models.CharField(max_length=100)
 
     # optionals
-    linkedin_url = models.URLField()
+    stream_link = models.URLField()
     # End of optionals
 
     def __str__(self) -> str:
-        return self.name
+        return self.title
 
     class Meta:
         ordering = ["created_at"]
