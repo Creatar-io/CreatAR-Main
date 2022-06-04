@@ -9,5 +9,5 @@ fi
 python3 manage.py migrate
 
 if [ "$DEBUG" == "True" ]; then
-    python3 manage.py runserver 0.0.0.0:8081
+    python3 manage.py runserver 0.0.0.0:5050
 fi
