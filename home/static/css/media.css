@@ -1,634 +1,707 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .stephead {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 33px;
-        letter-spacing: 0.1em;
-        color: #FFFFFF;
-      }
-    .arbenefithead {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 25px;
-        color: #2E3555;
-      }
-      
-      .arbenefitsub {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 0.1em;
-        color: #2E3555;
-      }
-    .joinanimation{
-        display:none;
-    }
-    .meethead {
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 30px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-      }
-      
-      .meetsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-      }
-      
-    .jdlogo {
-        position: absolute;
-        top: -40px;
-        left: 1rem;
-       
-    }
-    .jdlogo img{
-        width: 100%;
-    }
+  .aboutdescrip {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e3555;
+  }
+  .benefiticon {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    border: 7px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .arbenefithead {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2e3555;
+  }
 
-    .jdsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-    }
+  .arbenefitsub {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2e3555;
+  }
+  .joinanimation {
+    display: none;
+  }
+  .meethead {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
 
-    .jdhead {
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 30px;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-    }
+    color: #ffffff;
+  }
 
-    .herohead {
-        font-weight: 900;
-        font-size: 42px;
-        line-height: 55px;
-        color: #ffffff;
-    }
+  .meetsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
 
-    .aboutcreatAR {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 60px;
-        color: #2e3555;
-    }
+    color: #ffffff;
+  }
 
-    .joinanimation {
-        display: none;
-    }
+  .jdlogo {
+    position: absolute;
+    top: -40px;
+    left: 1rem;
+  }
+  .jdlogo img {
+    width: 100%;
+  }
 
-    .v-effect-link li {
-        display: inline-block;
-        width: 48%;
+  .jdsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 
-    }
+    color: #ffffff;
+  }
 
-    .v-effect-link {
-        list-style: none;
-        counter-reset: steps;
-    }
+  .jdhead {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
 
-    .v-effect-link li {
-        counter-increment: steps;
-    }
+    color: #ffffff;
+  }
 
-    .v-effect-link li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .herohead {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 55px;
+    color: #ffffff;
+  }
 
-        letter-spacing: 0.1em;
-        color: #FA9F71;
-    }
+  .aboutcreatAR {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 60px;
+    color: #2e3555;
+  }
 
-    .stepshead {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-        /* or 125% */
+  .joincomhead {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--light);
+  }
+  .joinanimation {
+    display: none;
+  }
 
-        letter-spacing: 0.1em;
+  .v-effect-link li {
+    display: inline-table;
+    width: 48%;
+  }
 
-        color: #FFFFFF;
-        border-left: 10px solid #FA9F71;
-    }
+  .v-effect-link {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-    .stepsheadbrand {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-        /* or 125% */
+  .v-effect-link li {
+    counter-increment: steps;
+  }
 
-        letter-spacing: 0.1em;
+  .v-effect-link li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-        color: #FFFFFF;
-        border-right: 10px solid #FFDC5F;
-    }
+    color: #fa9f71;
+  }
 
-    .benefitsARsub {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
-        /* identical to box height, or 150% */
+  .stepshead {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    /* or 125% */
 
-        letter-spacing: 0.1em;
+    color: #ffffff;
+    border-left: 10px solid #fa9f71;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FA9F71;
+  .stepsheadbrand {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    /* or 125% */
 
-    }
+    color: #ffffff;
+    border-right: 10px solid #ffdc5f;
+  }
 
-    .benefitsBrandsub {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
-        /* identical to box height, or 150% */
+  .benefitsARsub {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
 
-        letter-spacing: 0.1em;
+    color: #2e3555;
+    border-left: 10px solid #fa9f71;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FFDC5F;
+  .benefitsBrandsub {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
 
-    }
+    color: #2e3555;
+    border-left: 10px solid #ffdc5f;
+  }
 
+  .brandlink li {
+    display: inline-table;
+    width: 48%;
+  }
 
-    .brandlink li {
-        display: inline-block;
-        width: 48%;
+  .brandlink {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-    }
+  .brandlink li {
+    counter-increment: steps;
+  }
 
-    .brandlink {
-        list-style: none;
-        counter-reset: steps;
-    }
+  .brandlink li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-table;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-    .brandlink li {
-        counter-increment: steps;
-    }
+    color: #ffdc5f;
+  }
 
-    .brandlink li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .contactbg {
+    background: url("/static/img/contactbg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100%;
+  }
 
-        letter-spacing: 0.1em;
-        color: #FFDC5F;
-    }
+  .mixbgactive {
+    background: url("/static/img/mixbgactive.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .stephead {
+    font-weight: 500;
+    font-size: 18px;
 
-    .contactbg {
-        background: url("/static/img/contactbg.svg");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: auto 100%;
-    }
-
-    .mixbgactive {
-        background: url("/static/img/mixbgactive.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    color: #ffffff;
+  }
 }
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
-    .stephead {
-        font-weight: 700;
-        font-size: 27px;
-        line-height: 40px;
-        letter-spacing: 0.1em;
-        color: #FFFFFF;
-      }
-    .arbenefithead {
-        font-weight: 800;
-        font-size: 26px;
-        line-height: 31px;
-        color: #2E3555;
-      }
-      
-      .arbenefitsub {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: 0.1em;
-        color: #2E3555;
-      }
-    .joinanimation{
-        display:none;
-    }
-    .meethead {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 30px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-      }
-      
-      .meetsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-      }
-      
-    .jdlogo {
-        position: absolute;
-        top: -90px;
-        left: 2.5rem;
-    }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .benefiticon {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -50px;
+    left: 38%;
+    border: 7px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .owl-carousel .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 46px;
+    cursor: pointer;
+    top: 100px !important;
+  }
 
-    .jdsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-    }
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
 
-    .jdhead {
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 30px;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-    }
+  .owl-carousel .prev-slide {
+    background: url("/static/img/leftarrow.png") no-repeat scroll 0 0;
+    left: -33px;
+  }
+  .owl-carousel .next-slide {
+    background: url("/static/img/rightarrow.png") no-repeat scroll 0px 0px;
+    right: -33px;
+  }
 
-    .herohead {
-        font-weight: 900;
-        font-size: 72px;
-        line-height: 85px;
-        text-align: center;
-        color: #ffffff;
-    }
+  .custome_slide .owl-dots,
+  .custome_slide .owl-nav.disabled {
+    display: block;
+  }
+  .stephead {
+    font-weight: 700;
+    font-size: 20px;
 
-    .aboutcreatAR {
-        font-weight: 800;
-        font-size: 60px;
-        line-height: 70px;
+    color: #ffffff;
+  }
+  .aboutdescrip {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e3555;
+  }
 
-        color: #2e3555;
-    }
+  .arbenefithead {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: #2e3555;
+  }
 
-    .joinanimation {
-        display: block;
-    }
+  .arbenefitsub {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2e3555;
+  }
+  .joinanimation {
+    display: none;
+  }
+  .meethead {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
 
-    .v-effect-link li {
-        display: inline-block;
-        width: 49%;
+    color: #ffffff;
+  }
 
-    }
+  .meetsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
 
-    .v-effect-link {
-        list-style: none;
-        counter-reset: steps;
-    }
+    color: #ffffff;
+  }
 
-    .v-effect-link li {
-        counter-increment: steps;
-    }
+  .jdlogo {
+    position: absolute;
+    top: -90px;
+    left: 2.5rem;
+  }
 
-    .v-effect-link li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .jdsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
 
-        letter-spacing: 0.1em;
-        color: #FA9F71;
-    }
+    color: #ffffff;
+  }
 
-    .stepshead {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
-        /* or 125% */
+  .jdhead {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 30px;
 
-        letter-spacing: 0.1em;
+    color: #ffffff;
+  }
 
-        color: #FFFFFF;
-        border-left: 10px solid #FA9F71;
-    }
+  .herohead {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 85px;
+    text-align: center;
+    color: #ffffff;
+  }
 
-    .stepsheadbrand {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
-        /* or 125% */
+  .aboutcreatAR {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70px;
 
-        letter-spacing: 0.1em;
+    color: #2e3555;
+  }
+  .joincomhead {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--light);
+  }
+  .joinanimation {
+    display: block;
+  }
 
-        color: #FFFFFF;
-        border-right: 10px solid #FFDC5F;
-    }
+  .v-effect-link li {
+    display: inline-table;
+    width: 49%;
+  }
 
-    .benefitsARsub {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
-        /* identical to box height, or 150% */
+  .v-effect-link {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-        letter-spacing: 0.1em;
+  .v-effect-link li {
+    counter-increment: steps;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FA9F71;
+  .v-effect-link li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-    }
+    color: #fa9f71;
+  }
 
-    .benefitsBrandsub {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
-        /* identical to box height, or 150% */
+  .stepshead {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
 
-        letter-spacing: 0.1em;
+    color: #ffffff;
+    border-left: 10px solid #fa9f71;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FFDC5F;
+  .stepsheadbrand {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
 
-    }
+    color: #ffffff;
+    border-right: 10px solid #ffdc5f;
+  }
 
+  .benefitsARsub {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 150% */
 
-    .brandlink li {
-        display: inline-block;
-        width: 49%;
+    color: #2e3555;
+    border-left: 10px solid #fa9f71;
+  }
 
-    }
+  .benefitsBrandsub {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 150% */
 
-    .brandlink {
-        list-style: none;
-        counter-reset: steps;
-    }
+    color: #2e3555;
+    border-left: 10px solid #ffdc5f;
+  }
 
-    .brandlink li {
-        counter-increment: steps;
-    }
+  .brandlink li {
+    display: inline-table;
+    width: 49%;
+  }
 
-    .brandlink li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .brandlink {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-        letter-spacing: 0.1em;
-        color: #FFDC5F;
-    }
+  .brandlink li {
+    counter-increment: steps;
+  }
 
-    .contactbg {
-        background: url("/static/img/contactbg.svg");
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
+  .brandlink li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-    .mixbgactive {
-        background: url("/static/img/mixbgactive.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    color: #ffdc5f;
+  }
+
+  .contactbg {
+    background: url("/static/img/contactbg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .mixbgactive {
+    background: url("/static/img/mixbgactive.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
-@media only screen and (min-width: 1224px) {
-    .stephead {
-        font-weight: 700;
-        font-size: 27px;
-        line-height: 40px;
-        letter-spacing: 0.1em;
-        color: #FFFFFF;
-      }
-    .arbenefithead {
-        font-weight: 800;
-        font-size: 26px;
-        line-height: 31px;
-        color: #2E3555;
-      }
-      
-      .arbenefitsub {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: 0.1em;
-        color: #2E3555;
-      }
-    .joinanimation{
-        display:block;
-    }
-    .meethead {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 30px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-      }
-      
-      .meetsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 40px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-      }
-      
-    .jdlogo {
-        position: absolute;
-        top: -90px;
-        left: 5.5rem;
-    }
+@media only screen and (min-width: 1025px) {
+  .benefiticon {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -50px;
+    left: 33%;
+    border: 7px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .owl-carousel .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 46px;
+    cursor: pointer;
+    top: 100px !important;
+  }
 
-    .jdsub {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 40px;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-    }
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
 
-    .jdhead {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 30px;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
-    }
+  .owl-carousel .prev-slide {
+    background: url("/static/img/leftarrow.png") no-repeat scroll 0 0;
+    left: -33px;
+  }
+  .owl-carousel .next-slide {
+    background: url("/static/img/rightarrow.png") no-repeat scroll 0px 0px;
+    right: -33px;
+  }
 
-    .herohead {
-        font-weight: 900;
-        font-size: 72px;
-        line-height: 85px;
-        text-align: center;
-        color: #ffffff;
-    }
+  .custome_slide .owl-dots,
+  .custome_slide .owl-nav.disabled {
+    display: block;
+  }
 
-    .aboutcreatAR {
-        font-weight: 800;
-        font-size: 60px;
-        line-height: 70px;
+  .stephead {
+    font-weight: 700;
+    font-size: 20px;
 
-        color: #2e3555;
-    }
+    color: #ffffff;
+  }
+  .aboutdescrip {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e3555;
+  }
+  .arbenefithead {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: #2e3555;
+  }
 
-    .joinanimation {
-        display: block;
-    }
+  .arbenefitsub {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2e3555;
+  }
+  .joinanimation {
+    display: block;
+  }
+  .meethead {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
 
-    .v-effect-link li {
-        display: inline-block;
-        width: 24%;
+    color: #ffffff;
+  }
 
-    }
+  .meetsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
 
-    .v-effect-link {
-        list-style: none;
-        counter-reset: steps;
-    }
+    color: #ffffff;
+  }
 
-    .v-effect-link li {
-        counter-increment: steps;
-    }
+  .jdlogo {
+    position: absolute;
+    top: -90px;
+    left: 5.5rem;
+  }
 
-    .v-effect-link li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .jdsub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
 
-        letter-spacing: 0.1em;
-        color: #FA9F71;
-    }
+    color: #ffffff;
+  }
 
-    .stepshead {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
-        /* or 125% */
+  .jdhead {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 30px;
 
-        letter-spacing: 0.1em;
+    color: #ffffff;
+  }
 
-        color: #FFFFFF;
-        border-left: 10px solid #FA9F71;
-    }
+  .herohead {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 85px;
+    text-align: center;
+    color: #ffffff;
+  }
 
-    .stepsheadbrand {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
-        /* or 125% */
+  .aboutcreatAR {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70px;
 
-        letter-spacing: 0.1em;
+    color: #2e3555;
+  }
+  .joincomhead {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--light);
+  }
+  .joinanimation {
+    display: block;
+  }
 
-        color: #FFFFFF;
-        border-right: 10px solid #FFDC5F;
-    }
+  .v-effect-link li {
+    display: inline-table;
+    width: 24%;
+  }
 
-    .benefitsARsub {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
-        /* identical to box height, or 150% */
+  .v-effect-link {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-        letter-spacing: 0.1em;
+  .v-effect-link li {
+    counter-increment: steps;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FA9F71;
+  .v-effect-link li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-    }
+    color: #fa9f71;
+  }
 
-    .benefitsBrandsub {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
-        /* identical to box height, or 150% */
+  .stepshead {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
 
-        letter-spacing: 0.1em;
+    color: #ffffff;
+    border-left: 10px solid #fa9f71;
+  }
 
-        color: #2E3555;
-        border-left: 10px solid #FFDC5F;
+  .stepsheadbrand {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
 
-    }
+    color: #ffffff;
+    border-right: 10px solid #ffdc5f;
+  }
 
+  .benefitsARsub {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 150% */
 
-    .brandlink li {
-        display: inline-block;
-        width: 24%;
+    color: #2e3555;
+    border-left: 10px solid #fa9f71;
+  }
 
-    }
+  .benefitsBrandsub {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 150% */
 
-    .brandlink {
-        list-style: none;
-        counter-reset: steps;
-    }
+    color: #2e3555;
+    border-left: 10px solid #ffdc5f;
+  }
 
-    .brandlink li {
-        counter-increment: steps;
-    }
+  .brandlink li {
+    display: inline-table;
+    width: 24%;
+  }
 
-    .brandlink li::before {
-        content: "0"counter(steps) "-";
-        height: 1.2em;
-        display: inline-grid;
-        place-items: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 20px;
-        /* identical to box height, or 133% */
+  .brandlink {
+    list-style: none;
+    counter-reset: steps;
+  }
 
-        letter-spacing: 0.1em;
-        color: #FFDC5F;
-    }
+  .brandlink li {
+    counter-increment: steps;
+  }
 
-    .contactbg {
-        background: url("/static/img/contactbg.svg");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: 100% auto;
-    }
+  .brandlink li::before {
+    content: "0" counter(steps) "-";
+    height: 1.2em;
+    display: inline-grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 
-    .mixbgactive {
-        background: url("/static/img/mixbgactive.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-attachment: fixed;
-    }
+    color: #ffdc5f;
+  }
+
+  .contactbg {
+    background: url("/static/img/contactbg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+
+  .mixbgactive {
+    background: url("/static/img/mixbgactive.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
 }

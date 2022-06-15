@@ -1,0 +1,82 @@
+<!-- Inherit base template -->
+{% extends "__base.html" %}
+
+<!-- Load all static content -->
+{% load static %}
+
+<!-- Import specific stylesheets (If any) -->
+{% block stlyesheets %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}">
+<link rel="stylesheet" href="{% static '/css/media.css' %}">
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="loginbg">
+    {% include 'partials/loginnav.html' %}
+    <div class="container">
+        <div class="row p-lg-5 p-md-2 px-2 pb-md-5 pb-lg-5 pb-5">
+            <div class="col-lg-6 col-12 col-md-5 px-lg-4 px-md-1 px-1">
+                <div class="loginhead pt-5">Welcome!</div>
+                <div class="loginsub pt-3">
+                    Build your website, complete with an online store, blog & client galleries.
+                    grow your creative business effortlessly with Pixpabuild your website, complete with an
+                    online stor
+                </div>
+                <div class="py-3">
+                    <a href="" class="joinlogin px-3 py-2">Join Discord</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 col-md-7">
+                <div class="loginbox px-lg-5 px-md-3 px-3 py-lg-4 py-md-3 py-4">
+                    <div class="loginboxhead text-center">
+                        Register here!
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="contactlabel pb-2">Email<span class="required">*</span></label>
+                            <input type="email" placeholder="Enter your email" class="contactinput" id="email"
+                                name="email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="contactlabel pb-2">Password<span
+                                    class="required">*</span></label>
+                            <input type="password" placeholder="Enter your password                                   "
+                                class="contactinput" id="password" name="password">
+                        </div>
+                        <div class="mb-4">
+                            <label for="rpassword" class="contactlabel pb-2">Repeat Password<span
+                                    class="required">*</span></label>
+                            <input type="password" placeholder="Enter your password                                   "
+                                class="contactinput" id="rpassword" name="rpassword">
+                        </div>
+
+                        <!-- <div class="form-check pb-4">
+                                <input class="form-check-input" checked type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label keepme" for="flexCheckDefault">
+                                    Keep me signed in
+                                </label>
+                            </div> -->
+                        <button type="submit" class="px-5 py-2 w-100 btnsignin">Sign Up</button>
+                    </form>
+                    <div class="noaccount text-center justify-content-center py-3">
+                        Already have an account?<a href="/login"
+                            class="text-decoration-none ps-1 redirectunderline dark-text-color">
+                            Login now.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Render footer -->
+{% include 'partials/footer.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static '/js/getblogs.js' %}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock %}
