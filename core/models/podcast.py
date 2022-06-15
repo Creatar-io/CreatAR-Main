@@ -8,10 +8,9 @@ class Podcast(models.Model):
     # For use cases undefined
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
-    # Associate Moderator User
     streamed_on = models.DateTimeField(auto_now_add=True, blank=True)
-
     title = models.CharField(max_length=100)
+    description = models.TextField(blank=True, null=True)
 
     # optionals
     stream_link = models.URLField()
