@@ -11,6 +11,8 @@ from .views import (
     jdTemp,
     brandProTemp,
     creatARproTemp,
+    jobDetails,
+    brandSettings,
 )
 
 urlpatterns = [
@@ -23,4 +25,6 @@ urlpatterns = [
     path("jdTemp", jdTemp),
     path("brandProTemp", brandProTemp),
     path("creatARproTemp", creatARproTemp),
+    path("jobDetails", jobDetails),
+    path("brandSettings", brandSettings),
 ]

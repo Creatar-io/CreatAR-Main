@@ -60,8 +60,21 @@ def creatARproTemp(request):
     Render the login page.
     '''
     return render(request, "creatARprofileTemplate.html")
-    
-    # Get all podcasts
+
+def jobDetails(request):
+    '''
+    Render the login page.
+    '''
+    return render(request, "jobDetails.html")
+
+def brandSettings(request):
+    '''
+    Render the login page.
+    '''
+    return render(request, "brandsSettings.html")
+
+
+        # Get all podcasts
     podcasts = Podcast.objects.all()
     video_ids = [video_id_extractor(podcast.stream_link) for podcast in podcasts]
     podcasts_w_vid = zip(podcasts, video_ids)

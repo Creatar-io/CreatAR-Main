@@ -54,7 +54,7 @@ h6 {
 }
 
 .dark-text {
-  color: var(--dark);
+  color: var(--dark) !important;
 }
 
 .light-text {
@@ -127,10 +127,17 @@ h6 {
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  border: 3px solid var(--dark);
   color: var(--white);
+}
+.btncontact:hover {
+  background: var(--white) !important;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  border: 3px solid var(--dark);
+  color: var(--dark);
 }
 
 .required {
@@ -198,6 +205,7 @@ h6 {
   color: var(--white);
   background-color: var(--dark);
   border-radius: 22.5px;
+  border: 3px solid var(--dark);
 }
 
 .signupnav:hover {
@@ -229,19 +237,19 @@ h6 {
 /* home */
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--light);
+  color: var(--light) !important;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 .herobg {
@@ -405,7 +413,6 @@ h6 {
   color: #ff6e26;
 }
 
-
 .joincomsub {
   font-weight: 600;
   font-size: 18px;
@@ -473,6 +480,7 @@ h6 {
   align-items: center;
   text-align: center;
   color: var(--dark);
+  border: 3px solid #fa9f71;
 }
 
 .joinUs:hover {
@@ -490,6 +498,7 @@ h6 {
   align-items: center;
   text-align: center;
   color: var(--dark);
+  border: 3px solid #ffdc5f;
 }
 
 .joinUsbrand:hover {
@@ -531,8 +540,6 @@ h6 {
   border-radius: 5px;
   position: relative;
 }
-
-
 
 /* home */
 
@@ -648,14 +655,12 @@ h6 {
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
-  display: flex;
-  align-items: center;
   color: var(--light);
 }
 
 .btnsignin {
   background: var(--dark);
-  border: 1px solid var(--white);
+  border: 3px solid var(--white);
   border-radius: 3px;
   font-weight: 500;
   font-size: 18px;
@@ -669,7 +674,7 @@ h6 {
 
 .btnsignin:hover {
   background: var(--white);
-  border: 1px solid var(--dark);
+  border: 3px solid var(--dark);
   color: var(--dark);
 }
 
@@ -702,15 +707,6 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-
-.formhead {
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  color: var(--white);
 }
 
 .formsub {
@@ -1412,26 +1408,167 @@ h6 {
   color: #ffdc5f;
 }
 
-.cardblog{
+.cardblog {
   border-radius: 10px !important;
-  
 }
 
-.cardblog:hover{
+.cardblog:hover {
   filter: drop-shadow(0px 0px 20px #0c0f1a);
 }
 
-.owl-carousel .owl-stage{display: flex;}
+.owl-carousel .owl-stage {
+  display: flex;
+}
 .item2 {
-    display: flex;
-    flex: 1 0 auto;
-    height: 100%;
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
 }
 .owl-carousel1 {
-    position: relative;
-    overflow: hidden;
-    /* margin-bottom: 80px; *//*This is optional*/
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  position: relative;
+  overflow: hidden;
+  /* margin-bottom: 80px; */ /*This is optional*/
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.jobdetailshead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #2e3555;
+}
+.updatejobdets {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  background: #ed5264;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 7px 20px 7px 20px;
+  border: 1px solid #ed5264;
+}
+
+.updatejobdets:hover {
+  background: #fff;
+  color: #ed5264;
+  border: 1px solid #ed5264;
+}
+
+.cancelbtnjobdets {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  background: #ffff;
+  border-radius: 3px;
+  color: #2e3555;
+  padding: 7px 20px 7px 20px;
+  border: 1px solid #2e3555;
+}
+
+.cancelbtnjobdets:hover {
+  background: #2e3555;
+  color: #fff;
+  border: 1px solid #2e3555;
+}
+
+.closejobdets {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.closejobdets:hover {
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("/static/img/Calendar.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.form-select option {
+  color: #869ee1;
+  width: 100%;
+}
+
+.pillbox {
+  background: #ffffff !important;
+  border: 1px solid #869ee1 !important;
+  border-radius: 5px !important;
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #2e3555 !important;
+  background-color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+}
+
+.settingslink {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #869ee1;
+}
+
+.settingsredlink {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 30px !important;
+  color: #ff0000 !important;
+}
+
+.bluehr {
+  color: #869ee1;
+}
+
+.savechanges {
+  background: #ed5264;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--white);
+  padding: 6px 18px 6px 18px;
+  border: 3px solid #ed5264;
+}
+
+.savechanges:hover {
+  background: #fff;
+  border: 3px solid #ed5264;
+  color: #ed5264;
+}
+
+.deletebrandpicbtn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2e3555;
+  background: #e7e7e7;
+  border-radius: 3px;
+  padding: 6px 28px 6px 28px;
+  text-decoration: none;
+  border: 3px solid #e7e7e7;
+}
+
+.deletebrandpicbtn:hover {
+  color: #e7e7e7;
+  background: #2e3555;
+  border: 3px solid #2e3555;
 }
