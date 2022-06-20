@@ -16,7 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print(BASE_DIR)
+PROJECT_BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # Add your modules here
     "core",
     "home",
+    "users",
 ]
 
 REST_FRAMEWORK = {
@@ -111,12 +112,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "creatar.urls"
 
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(BASE_DIR, "templates"),
-            os.path.join(BASE_DIR, "templates", "allauth"),
+            os.path.join(PROJECT_BASE_DIR, "users", "templates"),
+            os.path.join(PROJECT_BASE_DIR, "users", "templates", "allauth"),
         ],
         "APP_DIRS": True,
         "OPTIONS": {
