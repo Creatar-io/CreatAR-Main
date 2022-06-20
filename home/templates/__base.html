@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  
     <link rel="icon" type="image/x-icon" href="{% static '/favicon.png' %}">
     <!-- owl -->
     <link rel="stylesheet" type="text/css"
@@ -141,7 +141,47 @@
             $(this).addClass('activeinner');
         });
     </script>
+    <script>
+        class App extends React.Component {
+            componentDidMount() {
+                let left = document.getElementById('left');
+                dragula([left]);
+            }
 
+            render() {
+                return (
+                    <div className="container">
+                        <div id="left" className="container">
+                            <Card body="Card 3" />
+                            <Card body="Card 4" />
+                        </div>
+
+                    </div>
+                );
+            }
+        }
+
+        class Card extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            render() {
+                return (
+                    <div className="card">
+                        <div className="card-header">
+                            <h3>Example Card</h3>
+                        </div>
+                        <div className="card-body">
+                            <p>{this.props.body}</p>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        React.render(<App />, document.getElementById('container1'));
+    </script>
     {% block scripts %}{% endblock %}
 </body>
 
