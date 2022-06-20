@@ -1539,7 +1539,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 5px !important;
 }
 
-
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #2e3555 !important;
@@ -1601,4 +1600,56 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #e7e7e7;
   background: #2e3555;
   border: 3px solid #2e3555;
+}
+
+.postjobsettings {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ed5264;
+}
+
+.sorrydelete {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2e3555;
+}
+
+.modal-header {
+  border-bottom: 0px solid #dee2e6 !important;
+}
+
+.csectiontitle {
+  font-weight: 800;
+  font-size: 20px;
+  color: #ff6f26;
+}
+
+.csectioncontent {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e3555;
+}
+
+.aboutcbox {
+  border: 0.5px solid #869ee1;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.edtopic {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ff6f26;
+}
+
+.edplace {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2e3555;
+}
+
+.eddetails {
+  font-weight: 500;
+  font-size: 12px;
+  color: #869ee1;
 }

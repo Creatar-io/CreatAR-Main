@@ -22,126 +22,212 @@
         >
       </div>
     </div>
-  </div>
-  <hr />
-  <div class="container py-5">
-    <div class="row">
-      <div class="d-flex align-items-start text-start">
-        <div
-          class="nav col-3 pillbox p-4 text-start flex-column nav-pills me-5"
-          id="v-pills-tab"
-          role="tablist"
-          aria-orientation="vertical"
-        >
-          <button
-            class="nav-link text-start settingslink active"
-            id="v-pills-general-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-general"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-general"
-            aria-selected="true"
-          >
-            General
-          </button>
-          <button
-            class="nav-link text-start settingslink"
-            id="v-pills-basic-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-basic"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-basic"
-            aria-selected="false"
-          >
-            Basic Information
-          </button>
-          <button
-            class="nav-link text-start settingslink"
-            id="v-pills-password-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-password"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-password"
-            aria-selected="false"
-          >
-            Password
-          </button>
-          <button
-            class="nav-link text-start settingslink"
-            id="v-pills-social-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-social"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-social"
-            aria-selected="false"
-          >
-            Social Profiles
-          </button>
-          <button
-            class="nav-link text-start settingslink"
-            id="v-pills-postjob-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-postjob"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-postjob"
-            aria-selected="false"
-          >
-            Post Job
-          </button>
-          <button
-            class="nav-link text-start settingslink"
-            id="v-pills-companyweb-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-companyweb"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-companyweb"
-            aria-selected="false"
-          >
-            Company Website
-          </button>
-          <hr class="bluehr" />
-          <button
-            class="nav-link text-start settingsredlink"
-            id="v-pills-deleteacc-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-deleteacc-settings"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-deleteacc"
-            aria-selected="false"
-          >
-            Delete Account
-          </button>
-        </div>
-        <div class="tab-content pillbox col-8 p-4" id="v-pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="v-pills-general"
-            role="tabpanel"
-            aria-labelledby="v-pills-general-tab"
-          >
-            <form>
-              <div class="">
-                <label for="text" class="contactlabel pb-2"
-                  >Username<span class="required">*</span></label
-                >
-                <input
-                  type="text"
-                  placeholder="Username"
-                  class="contactinput"
-                  id="email"
-                  name="email"
-                />
-              </div>
-              <div class="mb-4 pt-2 forgotpass">
-                Your CreatAR URL: https://creatar.com/creatAR
-              </div>
+    <hr>
+    <div class="container py-5">
+        <div class="row">
+            <div class="d-flex align-items-start text-start flex-wrap">
+                <div class="nav col-lg-3 col-md-3 col-12 pillbox p-4 text-start flex-column nav-pills me-5"
+                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link text-start settingslink active" id="v-pills-general-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab"
+                        aria-controls="v-pills-general" aria-selected="true">General</button>
+                    <button class="nav-link text-start settingslink" id="v-pills-basic-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic"
+                        aria-selected="false">Basic Information</button>
+                    <button class="nav-link text-start settingslink" id="v-pills-password-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-password" type="button" role="tab" aria-controls="v-pills-password"
+                        aria-selected="false">Password</button>
+                    <button class="nav-link text-start settingslink" id="v-pills-social-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-social" type="button" role="tab" aria-controls="v-pills-social"
+                        aria-selected="false">Social Profiles</button>
+                    <button class="nav-link text-start settingslink" id="v-pills-postjob-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-postjob" type="button" role="tab" aria-controls="v-pills-postjob"
+                        aria-selected="false">Post Job</button>
+                    <button class="nav-link text-start settingslink" id="v-pills-companyweb-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-companyweb" type="button" role="tab" aria-controls="v-pills-companyweb"
+                        aria-selected="false">Company Website</button>
+                    <hr class="bluehr">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="nav-link text-start settingsredlink" id="v-pills-deleteacc-tab" data-bs-toggle="pill"
+                        type="button" role="tab" aria-controls="v-pills-deleteacc" aria-selected="false">Delete
+                        Account</button>
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 text-center">
+                                                <img src="{% static '/img/deletepng.png' %}" class=" px-5" alt="">
+                                                <div class="sorrydelete pt-4">We're sorry to see you leaving</div>
+                                                <div class="btnsdelete pb-3 pt-5">
+                                                    <a href="" class="updatejobdets text-decoration-none">Cancel</a>
+                                                    <a href="" class="cancelbtnjobdets ms-3 text-decoration-none">Delete
+                                                        my
+                                                        account</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content pillbox col-lg-8 col-md-8 col-12 mt-3 mt-lg-0 mt-md-0 p-4"
+                    id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                        aria-labelledby="v-pills-general-tab">
+                        <form>
+                            <div class="">
+                                <label for="text" class="contactlabel pb-2">Username<span
+                                        class="required">*</span></label>
+                                <input type="text" placeholder="Username" class="contactinput" id="email" name="email">
+                            </div>
+                            <div class="mb-4 pt-2 forgotpass">
+                                Your CreatAR URL: https://creatar.com/creatAR
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">Company Email<span
+                                        class="required">*</span></label>
+                                <input type="email" placeholder="Company Email" class="contactinput" id="password"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <a href="" class="savechanges">Save Changes</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
+                        <form>
+                            <div class="d-flex mb-4 flex-wrap align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="{% static '/img/jdlogo.png' %}" class="brandpicturesettings" alt="">
+                                    <a href="" class="ms-3 savechanges">Upload new picture</a>
+                                </div>
+                                <div class="flex-grow-1 pt-lg-0 pt-md-0 pt-4 ms-lg-3 ms-md-3 ms-0">
+                                    <a href="" class="deletebrandpicbtn pt-2">Delete</a>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Brand Name<span
+                                        class="required">*</span></label>
+                                <input type="text" placeholder="Brand Name" class="contactinput" id="email"
+                                    name="email">
+                                <div class="mb-4 pt-2 forgotpass">
+                                    Your CreatAR URL: https://creatar.com/creatAR
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">Tagline<span
+                                        class="required">*</span></label>
+                                <input type="email" placeholder="Tagline" class="contactinput" id="password"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">Type of Company<span
+                                        class="required">*</span></label>
+                                <input type="email" placeholder="Type of Company" class="contactinput" id="password"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">Location<span
+                                        class="required">*</span></label>
+                                <input type="email" placeholder="Location" class="contactinput" id="password"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">About Company<span
+                                        class="required">*</span></label>
+                                <textarea class="form-control" placeholder="About Company"
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="contactlabel pb-2">Services<span
+                                        class="required">*</span></label>
+                                <select class="form-select w-100" aria-label="Default select example">
+                                    <option selected class="menuselect">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <a href="" class="savechanges">Save Changes</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-password" role="tabpanel"
+                        aria-labelledby="v-pills-password-tab">
+                        <form>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Old Password<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="Old Password" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">New Password<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="New Password" class="contactinput" id="email"
+                                    name="email">
+                                <div class=" pt-2 forgotpass">
+                                    Your company website
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Retype New Password<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="Retype New Password" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <a href="" class="savechanges">Save Changes</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-social" role="tabpanel" aria-labelledby="v-pills-social-tab">
+                        <form>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Instagram<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="Instagram URL" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">LinkedIn<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="LinkedIn URL" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Facebook<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="Facebook URL" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="text" class="contactlabel pb-2">Twitter<span
+                                        class="required">*</span></label>
+                                <input type="url" placeholder="Twitter URL" class="contactinput" id="email"
+                                    name="email">
+                            </div>
 
               <div class="mb-4">
                 <label for="password" class="contactlabel pb-2"
@@ -259,6 +345,37 @@
                 <div class="pt-2 forgotpass">Your company website</div>
               </div>
 
+<<<<<<< HEAD
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-postjob" role="tabpanel"
+                        aria-labelledby="v-pills-postjob-tab">
+                        <div class="postjobsettings">Post Job</div>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-companyweb" role="tabpanel"
+                        aria-labelledby="v-pills-companyweb-tab">
+                        <form>
+                            <div class="">
+                                <label for="text" class="contactlabel pb-2">Company URL<span
+                                        class="required">*</span></label>
+                                <input type="text" placeholder="Company URL" class="contactinput" id="email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4 pt-2 forgotpass">
+                                Your company website
+                            </div>
+                            <div class="mb-4">
+                                <a href="" class="savechanges">Save Changes</a>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+=======
               <div class="mb-4">
                 <label for="text" class="contactlabel pb-2"
                   >Retype New Password<span class="required">*</span></label
@@ -390,7 +507,9 @@
       </div>
     </div>
   </div>
+>>>>>>> 8335c63fad649ce211ce8bf8bf392b742b145633
 </section>
+
 
 <!-- Render footer -->
 {% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
