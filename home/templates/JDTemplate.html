@@ -6,236 +6,268 @@
 
 <!-- Import specific stylesheets (If any) -->
 {% block stlyesheets %}
-<link rel="stylesheet" href="{% static '/css/home.css' %}">
-<link rel="stylesheet" href="{% static '/css/media.css' %}">
-<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
-{% endblock %}
-
-{% block content %}
-{% include 'partials/whitenavbar.html' %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+{% endblock %} {% block customcontent %} {% include 'partials/whitenavbar.html'
+%}
 <section class="whitebg">
-    <section>
-        <div class="container-fluid bgjd">
-            <div class="row justify-content-center pb-3 pt-5 px-lg-5 px-md-3 px-1 ">
-                <div class="col-12 text-center py-lg-3 py-md-3">
-                    <div class="jdhead">Banner that company can change</div>
-                    <div class="jdsub pt-2 pt-lg-1 pt-md-1 pb-3">
-                        brand taglines or whatever they want to put up here can be added here like linkedin banner
-                    </div>
-                </div>
-                <div class="col-12 text-end">
-                    <a href="" class="px-2"><img class="hovereffectlogos" src="{% static '/img/jdinsta.svg' %}" alt=""></a>
-                    <a href="" class="px-2"><img class="hovereffectlogos" src="{% static '/img/jdlink.svg' %}" alt=""></a>
-                    <a href="" class="px-2"><img class="hovereffectlogos" src="{% static '/img/jdfb.svg' %}" alt=""></a>
-                    <a href="" class="px-2"><img class="hovereffectlogos" src="{% static '/img/jdtwitter.svg' %}" alt=""></a>
-                </div>
-            </div>
-            <div class="col-3" style="position:relative">
-                <div class="jdlogo">
-                    <img src="{% static '/img/jdlogo.png' %}" alt="">
-                </div>
-            </div>
-
+  <section>
+    <div class="container-fluid bgjd">
+      <div class="row justify-content-center pb-3 pt-5 px-lg-5 px-md-3 px-1">
+        <div class="col-12 text-center py-lg-3 py-md-3">
+          <div class="jdhead">Banner that company can change</div>
+          <div class="jdsub pt-2 pt-lg-1 pt-md-1 pb-3">
+            brand taglines or whatever they want to put up here can be added
+            here like linkedin banner
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row px-4 py-lg-5 py-md-5 py-3 justify-content-between">
-                <div class="col-lg-10 col-md-8 col-12 pt-3 text-lg-start text-md-start text-center">
-                    <div class="row">
-                        <div class="col-12 col-lg-12 col-md-12 companynamejd col-md-12">
-                            Company name
-                        </div>
-                        <div class="col-12 col-lg-12 col-md-12 jdjobtitle pt-lg-3 pt-md-3 pt-1 col-md-6">
-                            Job Title
-                        </div>
-                        <div class="col-12 pt-lg-3 col-md-12 pt-md-3 pt-1 col-lg-12 applybyjd col-md-6">
-                            <i class="bi bi-calendar-week pe-2" style="color:#869EE1"></i>Apply by: 03 April, 2022
-                        </div>
-                        <div class="col-6 jdpay col-md-12 pt-lg-1 pt-md-1 pt-2  col-lg-12 applybyjd col-md-6">
-                            $500/month
-                        </div>
-                        <div class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2  col-lg-12 col-md-6">
-                            <i class="bi bi-geo-alt-fill pe-2" style="color:#869EE1"></i>India
-                        </div>
-                        <div class="col-12 col-lg-12 col-md-12 pt-lg-1 pt-md-1 pt-2 col-md-6">
-                            <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
-                            <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
-                            <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
-                            <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
-                        </div>
-                    </div>
-                    <div class="pt-3">
-
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-12 pt-3 text-lg-start text-md-start text-start">
-                    <div class="row">
-                        <div class="col-12 col-md-12 col-lg-12 text-center text-lg-start text-md-start  col-md-12">
-                            <a href="" class="jdapplybtn px-3 py-2">Apply Now</a>
-                        </div>
-                        <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-lg-3 pt-3 pt-md-3">
-                            <i class="bi bi-share-fill pe-2" style="color:#869EE1"></i>Share this job
-                        </div>
-                        <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-3 pt-lg-0 pt-md-0">
-                            <i class="bi bi-bookmark-fill pe-2" style="color:#869EE1"></i>Save this job
-                        </div>
-                        <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12">
-                            <i class="bi bi-box-arrow-up-right pe-2" style="color:#869EE1"></i>Visit website
-                        </div>
-                        <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12">
-                            <i class="bi bi-people-fill pe-2" style="color:#869EE1"></i>No. of applicants
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-12 jdpostedon col-md-12">
-                            Posted on: <span class="light-text-color">03/24/2022</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 col-md-9 order-lg-first order-md-first col-12 pt-3">
-                    <div class="sectiontitles">
-                        About Pepsi
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus id vivamus integer lacus
-                        scelerisque. Felis quis blandit libero eros libero ac volutpat in. Mauris sed odio faucibus
-                        amet, volutpat. Mus quis massa eu amet et tortor pulvinar eu. Sagittis parturient quis
-                        molestie pulvinar vitae nulla turpis et id. Molestie hac tellus eros turpis sed faucibus
-                        enim. Consectetur cursus sed congue pellentesque. Urna, erat mi eu tortor
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 order-first col-12 ps-lg-5 ps-md-1 text-center ps-1 pt-3">
-                    <div class="activitylogjd ">Activity on CreatAR</div>
-                    <div class="locationjd pt-1">
-                        <i class="bi bi-box-arrow-up-right pe-2" style="color:#869EE1"></i>Hiring since: 03/24/2022
-                    </div>
-                    <div class="locationjd pt-1">
-                        <i class="bi bi-clipboard-data-fill pe-2" style="color:#869EE1"></i>Opportunities posted
-                    </div>
-                    <div class="locationjd pt-1">
-                        <i class="bi bi-person-plus-fill pe-2" style="color:#869EE1"></i>30 candidates hired
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Job Description
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus id vivamus integer lacus
-                        scelerisque. Felis quis blandit libero eros libero ac volutpat in. Mauris sed odio faucibus
-                        amet, volutpat. Mus quis massa eu amet et tortor pulvinar eu. Sagittis parturient quis
-                        molestie pulvinar vitae nulla turpis et id. Molestie hac tellus eros turpis sed faucibus
-                        enim. Consectetur cursus sed congue pellentesque. Urna, erat mi eu tortor
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Responsibilities
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        <ul>
-                            <li> one </li>
-                            <li>two</li>
-                            <li> one </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Learning Outcomes
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        <ul>
-                            <li> one </li>
-                            <li>two</li>
-                            <li> one </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Who Can Apply
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        <ul>
-                            <li> one </li>
-                            <li>two</li>
-                            <li> one </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Rewards & Incentives
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        <ul>
-                            <li> one </li>
-                            <li>two</li>
-                            <li> one </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Selection Procedure
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        <ul>
-                            <li> one </li>
-                            <li>two</li>
-                            <li> one </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 pt-3">
-                    <div class="sectiontitles">
-                        Number of Openings and Duration
-                    </div>
-                    <div class="sectioncontent pt-2">
-                        lorem lorem lorem lorem lorem
-                    </div>
-                </div>
-                <div class="col-12 text-center pt-5 ">
-                    <a href="" class="px-3 py-2 jdapplybtn">Apply Now</a>
-                    &nbsp; &nbsp;
-                    <a href="" class="px-3 py-2 jdbackbtn">Back to Jobs</a>
-                </div>
-                <div class="col-12 pt-5 pb-3 px-4">
-                    <div class="fraudjdbox row px-lg-5 px-md-4 px-2 py-4">
-                        <div class="col-lg-1 col-md-1 col-2 text-end">
-                            <img src="{% static '/img/fraudi.svg' %}" alt="">
-                        </div>
-                        <div class="col-lg-11 col-md-11 col-10">
-                            <div class="fraudjdhead">
-                                Save yourself from fraud!
-                            </div>
-                            <div class="fraudjdsub">
-                                If an employer asks you to pay any security deposit, registration fee, laptop fee,
-                                etc.,
-                                do not pay and notify us immediately. Remember, Internshala doesn't charge a fee
-                                from
-                                the students to apply to a job or an internship & we don't allow other companies to
-                                do
-                                so either.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-12 text-end">
+          <a href="" class="px-2"
+            ><img
+              class="hovereffectlogos"
+              src="{% static '/img/jdinsta.svg' %}"
+              alt=""
+          /></a>
+          <a href="" class="px-2"
+            ><img
+              class="hovereffectlogos"
+              src="{% static '/img/jdlink.svg' %}"
+              alt=""
+          /></a>
+          <a href="" class="px-2"
+            ><img
+              class="hovereffectlogos"
+              src="{% static '/img/jdfb.svg' %}"
+              alt=""
+          /></a>
+          <a href="" class="px-2"
+            ><img
+              class="hovereffectlogos"
+              src="{% static '/img/jdtwitter.svg' %}"
+              alt=""
+          /></a>
         </div>
-
-    </section>
+      </div>
+      <div class="col-3" style="position: relative">
+        <div class="jdlogo">
+          <img src="{% static '/img/jdlogo.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row px-4 py-lg-5 py-md-5 py-3 justify-content-between">
+        <div
+          class="col-lg-10 col-md-8 col-12 pt-3 text-lg-start text-md-start text-center"
+        >
+          <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 companynamejd col-md-12">
+              Company name
+            </div>
+            <div
+              class="col-12 col-lg-12 col-md-12 jdjobtitle pt-lg-3 pt-md-3 pt-1 col-md-6"
+            >
+              Job Title
+            </div>
+            <div
+              class="col-12 pt-lg-3 col-md-12 pt-md-3 pt-1 col-lg-12 applybyjd col-md-6"
+            >
+              <i class="bi bi-calendar-week pe-2" style="color: #869ee1"></i
+              >Apply by: 03 April, 2022
+            </div>
+            <div
+              class="col-6 jdpay col-md-12 pt-lg-1 pt-md-1 pt-2 col-lg-12 applybyjd col-md-6"
+            >
+              $500/month
+            </div>
+            <div
+              class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2 col-lg-12 col-md-6"
+            >
+              <i class="bi bi-geo-alt-fill pe-2" style="color: #869ee1"></i
+              >India
+            </div>
+            <div
+              class="col-12 col-lg-12 col-md-12 pt-lg-1 pt-md-1 pt-2 col-md-6"
+            >
+              <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
+              <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
+              <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
+              <a href="" class="jdtagperks p-2 me-2">Perk 1</a>
+            </div>
+          </div>
+          <div class="pt-3"></div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-12 pt-3 text-lg-start text-md-start text-start"
+        >
+          <div class="row">
+            <div
+              class="col-12 col-md-12 col-lg-12 text-center text-lg-start text-md-start col-md-12"
+            >
+              <a href="" class="jdapplybtn px-3 py-2">Apply Now</a>
+            </div>
+            <div
+              class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-lg-3 pt-3 pt-md-3"
+            >
+              <i class="bi bi-share-fill pe-2" style="color: #869ee1"></i>Share
+              this job
+            </div>
+            <div
+              class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-3 pt-lg-0 pt-md-0"
+            >
+              <i class="bi bi-bookmark-fill pe-2" style="color: #869ee1"></i
+              >Save this job
+            </div>
+            <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12">
+              <i
+                class="bi bi-box-arrow-up-right pe-2"
+                style="color: #869ee1"
+              ></i
+              >Visit website
+            </div>
+            <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12">
+              <i class="bi bi-people-fill pe-2" style="color: #869ee1"></i>No.
+              of applicants
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 jdpostedon col-md-12">
+              Posted on: <span class="light-text-color">03/24/2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-lg-9 col-md-9 order-lg-first order-md-first col-12 pt-3"
+        >
+          <div class="sectiontitles">About Pepsi</div>
+          <div class="sectioncontent pt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus id
+            vivamus integer lacus scelerisque. Felis quis blandit libero eros
+            libero ac volutpat in. Mauris sed odio faucibus amet, volutpat. Mus
+            quis massa eu amet et tortor pulvinar eu. Sagittis parturient quis
+            molestie pulvinar vitae nulla turpis et id. Molestie hac tellus eros
+            turpis sed faucibus enim. Consectetur cursus sed congue
+            pellentesque. Urna, erat mi eu tortor
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-3 order-first col-12 ps-lg-5 ps-md-1 text-center ps-1 pt-3"
+        >
+          <div class="activitylogjd">Activity on CreatAR</div>
+          <div class="locationjd pt-1">
+            <i class="bi bi-box-arrow-up-right pe-2" style="color: #869ee1"></i
+            >Hiring since: 03/24/2022
+          </div>
+          <div class="locationjd pt-1">
+            <i class="bi bi-clipboard-data-fill pe-2" style="color: #869ee1"></i
+            >Opportunities posted
+          </div>
+          <div class="locationjd pt-1">
+            <i class="bi bi-person-plus-fill pe-2" style="color: #869ee1"></i>30
+            candidates hired
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Job Description</div>
+          <div class="sectioncontent pt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus id
+            vivamus integer lacus scelerisque. Felis quis blandit libero eros
+            libero ac volutpat in. Mauris sed odio faucibus amet, volutpat. Mus
+            quis massa eu amet et tortor pulvinar eu. Sagittis parturient quis
+            molestie pulvinar vitae nulla turpis et id. Molestie hac tellus eros
+            turpis sed faucibus enim. Consectetur cursus sed congue
+            pellentesque. Urna, erat mi eu tortor
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Responsibilities</div>
+          <div class="sectioncontent pt-2">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Learning Outcomes</div>
+          <div class="sectioncontent pt-2">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Who Can Apply</div>
+          <div class="sectioncontent pt-2">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Rewards & Incentives</div>
+          <div class="sectioncontent pt-2">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Selection Procedure</div>
+          <div class="sectioncontent pt-2">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="sectiontitles">Number of Openings and Duration</div>
+          <div class="sectioncontent pt-2">lorem lorem lorem lorem lorem</div>
+        </div>
+        <div class="col-12 text-center pt-5">
+          <a href="" class="px-3 py-2 jdapplybtn">Apply Now</a>
+          &nbsp; &nbsp;
+          <a href="" class="px-3 py-2 jdbackbtn">Back to Jobs</a>
+        </div>
+        <div class="col-12 pt-5 pb-3 px-4">
+          <div class="fraudjdbox row px-lg-5 px-md-4 px-2 py-4">
+            <div class="col-lg-1 col-md-1 col-2 text-end">
+              <img src="{% static '/img/fraudi.svg' %}" alt="" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-10">
+              <div class="fraudjdhead">Save yourself from fraud!</div>
+              <div class="fraudjdsub">
+                If an employer asks you to pay any security deposit,
+                registration fee, laptop fee, etc., do not pay and notify us
+                immediately. Remember, Internshala doesn't charge a fee from the
+                students to apply to a job or an internship & we don't allow
+                other companies to do so either.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 <!-- Render footer -->
-{% include 'partials/footer.html' %}
-
-{% endblock %}
-
-{% block scripts %}
+{% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+  integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 {% endblock %}

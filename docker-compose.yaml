@@ -15,7 +15,6 @@ services:
     networks:
       creatar:
 
-
   backend:
     build: 
       context: .
@@ -27,6 +26,8 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
       - DEBUG=True
     volumes:
       - .:/code
