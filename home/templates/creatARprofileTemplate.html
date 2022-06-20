@@ -6,209 +6,268 @@
 
 <!-- Import specific stylesheets (If any) -->
 {% block stlyesheets %}
-<link rel="stylesheet" href="{% static '/css/home.css' %}">
-<link rel="stylesheet" href="{% static '/css/media.css' %}">
-<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
-{% endblock %}
-
-{% block content %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+{% endblock %} {% block customcontent %}
 <section class="whitebg">
-    {% include 'partials/whitenavbar.html' %}
-    <div class="container-fluid bgjd">
-        <div class="row justify-content-center pb-3 pt-5 px-lg-5 px-md-3 px-1 ">
-            <div class="col-12 text-center py-lg-3 py-md-3">
-                <div class="jdhead">Banner that creatAR can change</div>
-                <div class="jdsub pt-2 pt-lg-1 pt-md-1 pb-3">
-                    their taglines or whatever they want to put up here can be added here like linkedin banner
-                </div>
-            </div>
-            <div class="col-12 text-end">
-                <a href="" class="px-2"><img src="{% static '/img/jdinsta.svg' %}" class="hovereffectlogos" alt=""></a>
-                <a href="" class="px-2"><img src="{% static '/img/jdlink.svg' %}" class="hovereffectlogos" alt=""></a>
-                <a href="" class="px-2"><img src="{% static '/img/jdfb.svg' %}" class="hovereffectlogos" alt=""></a>
-                <a href="" class="px-2"><img src="{% static '/img/jdtwitter.svg'  %}" class="hovereffectlogos"
-                        alt=""></a>
-            </div>
+  {% include 'partials/whitenavbar.html' %}
+  <div class="container-fluid bgjd">
+    <div class="row justify-content-center pb-3 pt-5 px-lg-5 px-md-3 px-1">
+      <div class="col-12 text-center py-lg-3 py-md-3">
+        <div class="jdhead">Banner that creatAR can change</div>
+        <div class="jdsub pt-2 pt-lg-1 pt-md-1 pb-3">
+          their taglines or whatever they want to put up here can be added here
+          like linkedin banner
         </div>
-        <div class="col-3" style="position:relative">
-            <div class="jdlogo">
-                <img src="{% static '/img/jdlogo.png' %}" alt="">
-            </div>
-        </div>
+      </div>
+      <div class="col-12 text-end">
+        <a href="" class="px-2"
+          ><img
+            src="{% static '/img/jdinsta.svg' %}"
+            class="hovereffectlogos"
+            alt=""
+        /></a>
+        <a href="" class="px-2"
+          ><img
+            src="{% static '/img/jdlink.svg' %}"
+            class="hovereffectlogos"
+            alt=""
+        /></a>
+        <a href="" class="px-2"
+          ><img
+            src="{% static '/img/jdfb.svg' %}"
+            class="hovereffectlogos"
+            alt=""
+        /></a>
+        <a href="" class="px-2"
+          ><img
+            src="{% static '/img/jdtwitter.svg'  %}"
+            class="hovereffectlogos"
+            alt=""
+        /></a>
+      </div>
     </div>
+    <div class="col-3" style="position: relative">
+      <div class="jdlogo">
+        <img src="{% static '/img/jdlogo.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
 </section>
 <section>
-    <div class="container">
-        <div class="row py-lg-5 py-md-5 py-3 justify-content-between">
-            <div class="col-lg-9 col-md-8 col-12 pt-3 text-lg-start text-md-start text-center">
-                <div class="row">
-                    <div class="col-12 col-lg-12 col-md-12 activelyhiring col-md-12">
-                        Actively Job Seeking
-                    </div>
-                    <div class="col-12 col-lg-12 col-md-12 jdjobtitle pt-lg-3 pt-md-3 pt-1 col-md-6">
-                        Gunjan Paneri
-                    </div>
-                    <div class="col-6 pt-lg-3 col-md-12 pt-md-3 pt-1 col-lg-12 creataRtag col-md-6">
-                        UI UX Designer | Visual Designer
-                    </div>
-                    <div class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2  col-lg-12 col-md-6">
-                        <i class="bi bi-geo-alt-fill pe-2" style="color:#869EE1"></i>India
-                    </div>
-                    <div class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2  col-lg-12 col-md-6">
-                        <i class="bi bi-people-fill pe-2" style="color:#869EE1"></i> <b>13</b> Followers <b>12</b>
-                        Following
-                    </div>
-                    <div class="col-12 col-lg-12 col-md-12 pt-lg-3 pt-md-1 pt-2 col-md-6">
-                        <a href="" class="Followbtn px-3 py-2">
-                            <i class="bi bi-person-plus-fill" style="color:#2E3555"></i> Follow
-                        </a>
-                        <a href="" class="hirebtn ms-3 px-3 py-2">
-                            <i class="bi bi-folder-fill " style="color:#fff"></i> Hire Me
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-4 col-12 pt-3 text-lg-start text-md-start text-start">
-                <div class="row">
-                    <!-- <div class="col-12 col-md-12 col-lg-12 text-center text-lg-start text-md-start  col-md-12">
+  <div class="container">
+    <div class="row py-lg-5 py-md-5 py-3 justify-content-between">
+      <div
+        class="col-lg-9 col-md-8 col-12 pt-3 text-lg-start text-md-start text-center"
+      >
+        <div class="row">
+          <div class="col-12 col-lg-12 col-md-12 activelyhiring col-md-12">
+            Actively Job Seeking
+          </div>
+          <div
+            class="col-12 col-lg-12 col-md-12 jdjobtitle pt-lg-3 pt-md-3 pt-1 col-md-6"
+          >
+            Gunjan Paneri
+          </div>
+          <div
+            class="col-6 pt-lg-3 col-md-12 pt-md-3 pt-1 col-lg-12 creataRtag col-md-6"
+          >
+            UI UX Designer | Visual Designer
+          </div>
+          <div
+            class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2 col-lg-12 col-md-6"
+          >
+            <i class="bi bi-geo-alt-fill pe-2" style="color: #869ee1"></i>India
+          </div>
+          <div
+            class="col-6 locationjd col-md-12 pt-lg-1 pt-md-1 pt-2 col-lg-12 col-md-6"
+          >
+            <i class="bi bi-people-fill pe-2" style="color: #869ee1"></i>
+            <b>13</b> Followers <b>12</b>
+            Following
+          </div>
+          <div class="col-12 col-lg-12 col-md-12 pt-lg-3 pt-md-1 pt-2 col-md-6">
+            <a href="" class="Followbtn px-3 py-2">
+              <i class="bi bi-person-plus-fill" style="color: #2e3555"></i>
+              Follow
+            </a>
+            <a href="" class="hirebtn ms-3 px-3 py-2">
+              <i class="bi bi-folder-fill" style="color: #fff"></i> Hire Me
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-4 col-12 pt-3 text-lg-start text-md-start text-start"
+      >
+        <div class="row">
+          <!-- <div class="col-12 col-md-12 col-lg-12 text-center text-lg-start text-md-start  col-md-12">
                         <a href="" class="jdapplybtn2 px-3 py-2"><i class="bi bi-box-arrow-up-right pe-2"></i>Visit
                             Portfolio</a>
                     </div> -->
-                    <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-lg-3 pt-3 pt-md-3">
-                        <i class="bi bi-share-fill pe-2" style="color:#869EE1"></i>Share this creatAR
-                    </div>
-                    <div class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-3 pt-lg-0 pt-md-0">
-                        <i class="bi bi-bookmark-fill pe-2" style="color:#869EE1"></i>Save the creatAR
-                    </div>
-                    <div class="activitylogjd text-start pt-3">Activity on CreatAR</div>
-                    <div class="locationjd pt-1">
-                        <i class="bi bi-box-arrow-up-right pe-2" style="color:#869EE1"></i>Hiring since:
-                        03/24/2022
-                    </div>
-                    <div class="locationjd pt-1">
-                        <i class="bi bi-clipboard-data-fill pe-2" style="color:#869EE1"></i>Effects posted
-                    </div>
-                    <div class="msgdiv pt-3">
-                        <a href="" class="msgbtn px-3 py-2">
-                            <i class="bi bi-chat-left-fill" style="color:#fff"></i> Message
-                        </a>
-                    </div>
-
-                </div>
-            </div>
+          <div
+            class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-lg-3 pt-3 pt-md-3"
+          >
+            <i class="bi bi-share-fill pe-2" style="color: #869ee1"></i>Share
+            this creatAR
+          </div>
+          <div
+            class="col-6 col-md-12 col-lg-12 locationjd col-md-12 pt-3 pt-lg-0 pt-md-0"
+          >
+            <i class="bi bi-bookmark-fill pe-2" style="color: #869ee1"></i>Save
+            the creatAR
+          </div>
+          <div class="activitylogjd text-start pt-3">Activity on CreatAR</div>
+          <div class="locationjd pt-1">
+            <i class="bi bi-box-arrow-up-right pe-2" style="color: #869ee1"></i
+            >Hiring since: 03/24/2022
+          </div>
+          <div class="locationjd pt-1">
+            <i class="bi bi-clipboard-data-fill pe-2" style="color: #869ee1"></i
+            >Effects posted
+          </div>
+          <div class="msgdiv pt-3">
+            <a href="" class="msgbtn px-3 py-2">
+              <i class="bi bi-chat-left-fill" style="color: #fff"></i> Message
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 <nav class="navbar navbar-expand navbar-light">
-    <div class="container borderinnernav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item navServe innernavitems px-2 activeinner" data-target="section.services.s-h">
-                Work
-            </li>
-            <li class="nav-item navContact ms-3 px-3 innernavitems " data-target="section.contact.s-h">
-                About
-            </li>
-        </ul>
-    </div>
+  <div class="container borderinnernav">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li
+        class="nav-item navServe innernavitems px-2 activeinner"
+        data-target="section.services.s-h"
+      >
+        Work
+      </li>
+      <li
+        class="nav-item navContact ms-3 px-3 innernavitems"
+        data-target="section.contact.s-h"
+      >
+        About
+      </li>
+    </ul>
+  </div>
 </nav>
 <section class="services s-h">
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-lg-2 col-md-4 col-sm-12 col-6">
-                <div class="effectcard">
-                    <div class="row justify-content-between">
-                        <div class="col-12">
-                            <div class="img-overlay">
-                                <img src="{% static '/img/effectdummy.png' %}" alt="Avatar"
-                                    class="img-overlay-image effectdemo">
-                                <div class="overlay text-start">
-                                    <div class="text ps-3 pb-3">
-                                        <div class="effectname">Effect name</div>
-                                        <div class="toolseffect pt-1">Tools used, about effect in brief</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 pt-3 effectcreatername">
-                            <img src="{% static '/img/greydummy.png' %}" class="img-fluid"
-                                style="height:15px; width:auto;position: relative;" alt=""> Gunjan Paneri
-                        </div>
-                        <!-- <div class="col-6 pe-3 ps-0 pt-3 effectcount text-start">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-lg-2 col-md-4 col-sm-12 col-6">
+        <div class="effectcard">
+          <div class="row justify-content-between">
+            <div class="col-12">
+              <div class="img-overlay">
+                <img
+                  src="{% static '/img/effectdummy.png' %}"
+                  alt="Avatar"
+                  class="img-overlay-image effectdemo"
+                />
+                <div class="overlay text-start">
+                  <div class="text ps-3 pb-3">
+                    <div class="effectname">Effect name</div>
+                    <div class="toolseffect pt-1">
+                      Tools used, about effect in brief
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-3 effectcreatername">
+              <img
+                src="{% static '/img/greydummy.png' %}"
+                class="img-fluid"
+                style="height: 15px; width: auto; position: relative"
+                alt=""
+              />
+              Gunjan Paneri
+            </div>
+            <!-- <div class="col-6 pe-3 ps-0 pt-3 effectcount text-start">
                                     <img src="{% static '/img/likeeffect.svg' %}" class="img-fluid" style="height:20px; width: auto;"
                                         alt=""> 200 &nbsp;
                                     <img src="{% static '/img/vieweffect.svg' %}" class="img-fluid" alt=""> 200
                                 </div> -->
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
-<section class="contact s-h" style="display: none;">
-    <div class="container">
-        <div class="row pt-3">
-            <div class="col-lg-3 col-md-4 col-9">
-                <div class="input-group shadowsearch2 mb-3">
-                    <span class="input-group-text searchbaricon2" id="basic-addon1">
-                        <img src="{% static '/img/searchicon.svg' %}" alt="">
-                    </span>
-                    <input type="text" class="form-control searchbarcol2" placeholder="Tags" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-            </div>
+<section class="contact s-h" style="display: none">
+  <div class="container">
+    <div class="row pt-3">
+      <div class="col-lg-3 col-md-4 col-9">
+        <div class="input-group shadowsearch2 mb-3">
+          <span class="input-group-text searchbaricon2" id="basic-addon1">
+            <img src="{% static '/img/searchicon.svg' %}" alt="" />
+          </span>
+          <input
+            type="text"
+            class="form-control searchbarcol2"
+            placeholder="Tags"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
         </div>
-        <div class="row py-lg-5 py-md-5 py-3">
-            <div class="col-lg-3 col-md-6 col-12 p-lg-0 p-md-0 p-3">
-                <div class="jobbrandprofilebox py-3 row">
-                    <div class="col-lg-3 col-md-2 col-2 pt-3">
-                        <img src="{% static '/img/jdlogo.png' %}" class="w-100" alt="">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-9">
-                        <div class="row justify-content-between">
-                            <div class="col-6 cardnamecompany">Pepsi</div>
-                            <div class="col-6 jobratecard text-end">$500/month</div>
-                        </div>
-                        <div class="cardpositioncompany ">
-                            Filter Creator
-                        </div>
-                        <div class="locationjd">
-                            <i class="bi bi-geo-alt-fill pe-2" style="color:#869EE1"></i>India
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex flex-wrap flex-row bd-highlight mb-3">
-                            <div class="p-2">
-                                <a href="" class="jdtagperkscard text-decoration-none">Perk 1</a>
-                            </div>
-                            <div class="p-2">
-                                <a href="" class="jdtagperkscard text-decoration-none">2</a>
-                            </div>
-                            <div class="p-2">
-                                <a href="" class="jdtagperkscard text-decoration-none">3 perk</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <a href="" class="cardapply text-decoration-none px-3 py-2">Apply Now</a>
-                    </div>
-                    <div class="col-6 text-end carddate">
-                        03/24/2022
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row py-lg-5 py-md-5 py-3">
+      <div class="col-lg-3 col-md-6 col-12 p-lg-0 p-md-0 p-3">
+        <div class="jobbrandprofilebox py-3 row">
+          <div class="col-lg-3 col-md-2 col-2 pt-3">
+            <img src="{% static '/img/jdlogo.png' %}" class="w-100" alt="" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-9">
+            <div class="row justify-content-between">
+              <div class="col-6 cardnamecompany">Pepsi</div>
+              <div class="col-6 jobratecard text-end">$500/month</div>
+            </div>
+            <div class="cardpositioncompany">Filter Creator</div>
+            <div class="locationjd">
+              <i class="bi bi-geo-alt-fill pe-2" style="color: #869ee1"></i
+              >India
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex flex-wrap flex-row bd-highlight mb-3">
+              <div class="p-2">
+                <a href="" class="jdtagperkscard text-decoration-none"
+                  >Perk 1</a
+                >
+              </div>
+              <div class="p-2">
+                <a href="" class="jdtagperkscard text-decoration-none">2</a>
+              </div>
+              <div class="p-2">
+                <a href="" class="jdtagperkscard text-decoration-none"
+                  >3 perk</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <a href="" class="cardapply text-decoration-none px-3 py-2"
+              >Apply Now</a
+            >
+          </div>
+          <div class="col-6 text-end carddate">03/24/2022</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Render footer -->
-{% include 'partials/footer.html' %}
-
-{% endblock %}
-
-{% block scripts %}
+{% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+  integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 {% endblock %}

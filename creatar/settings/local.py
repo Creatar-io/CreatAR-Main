@@ -3,7 +3,6 @@ import os
 from creatar.settings.base import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(BASE_DIR)
 
 ALLOWED_HOSTS = ["*"]
 

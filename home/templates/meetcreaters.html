@@ -6,100 +6,121 @@
 
 <!-- Import specific stylesheets (If any) -->
 {% block stlyesheets %}
-<link rel="stylesheet" href="{% static '/css/home.css' %}">
-<link rel="stylesheet" href="{% static '/css/media.css' %}">
-<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
-{% endblock %}
-
-{% block content %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+{% endblock %} {% block customcontent %}
 <!-- Render navbar -->
 {% include 'partials/whitenavbar.html' %}
 <section class="bgmeetcreaters whitebg">
-
-    <div class="container">
-        <div class="row p-lg-5 py-md-5 px-md-3 px-2 py-5 text-center">
-            <div class="col-12">
-                <div class="meethead">Meet the Creators</div>
-                <div class="meetsub py-2 py-md-4">Lorem ipsum doloamet, consectetur adipiscing elit. Laoreet
-                    asit elementum ornare.</div>
-            </div>
+  <div class="container">
+    <div class="row p-lg-5 py-md-5 px-md-3 px-2 py-5 text-center">
+      <div class="col-12">
+        <div class="meethead">Meet the Creators</div>
+        <div class="meetsub py-2 py-md-4">
+          Lorem ipsum doloamet, consectetur adipiscing elit. Laoreet asit
+          elementum ornare.
         </div>
+      </div>
     </div>
+  </div>
 </section>
 <section>
-    <div class="container">
-        <div class="row py-3 py-lg-5 py-md-4">
-            <div class="col-12">
-                <div class="input-group shadowsearch mb-3">
-                    <span class="input-group-text searchbaricon" id="basic-addon1">
-                        <img src="{% static '/img/searchicon.svg' %}" alt="">
-                    </span>
-                    <input type="text" class="form-control searchbarcol" placeholder="" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span class="input-group-text searchbarbtn  px-3 py-2 " id="basic-addon2">Search</span>
-                </div>
-            </div>
-            <div class="col-12 pt-3">
-                <div class="d-flex flex-wrap flex-row bd-highlight mb-3">
-                    <div class="p-2">
-                        <a href="" class="searchtags text-decoration-none">Instagram</a>
-                    </div>
-                    <div class="p-2">
-                        <a href="" class="searchtags text-decoration-none">Snapchat</a>
-                    </div>
-                    <div class="p-2">
-                        <a href="" class="searchtags text-decoration-none">Facebook</a>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row py-3 py-lg-5 py-md-4">
+      <div class="col-12">
+        <div class="input-group shadowsearch mb-3">
+          <span class="input-group-text searchbaricon" id="basic-addon1">
+            <img src="{% static '/img/searchicon.svg' %}" alt="" />
+          </span>
+          <input
+            type="text"
+            class="form-control searchbarcol"
+            placeholder=""
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+          <span
+            class="input-group-text searchbarbtn px-3 py-2"
+            id="basic-addon2"
+            >Search</span
+          >
         </div>
+      </div>
+      <div class="col-12 pt-3">
+        <div class="d-flex flex-wrap flex-row bd-highlight mb-3">
+          <div class="p-2">
+            <a href="" class="searchtags text-decoration-none">Instagram</a>
+          </div>
+          <div class="p-2">
+            <a href="" class="searchtags text-decoration-none">Snapchat</a>
+          </div>
+          <div class="p-2">
+            <a href="" class="searchtags text-decoration-none">Facebook</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 <section>
-    <div class="container">
-        <div class="row pb-5">
-            <div class="col-lg-2 col-md-4 col-sm-12 col-6">
-                <div class="effectcard">
-                    <div class="row justify-content-between">
-                        <div class="col-12">
-                            <div class="img-overlay">
-                                <img src="{% static '/img/effectdummy.png' %}" alt="Avatar"
-                                    class="img-overlay-image effectdemo">
-                                <div class="overlay text-start">
-                                    <div class="text ps-3 pb-3">
-                                        <div class="effectname">Effect name</div>
-                                        <div class="toolseffect pt-1">Tools used, about effect in brief</div>
-                                        <div class="pt-2"> <a class="createrprofilelink text-decoration-none">View
-                                            profile
-                                            <img src="{% static '/img/viewprofilearrow.svg' %}" alt=""></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 pt-3 effectcreatername">
-                            <img src="{% static '/img/greydummy.png' %}" class="img-fluid"
-                                style="height:15px; width:auto;position: relative;" alt=""> Gunjan Paneri
-                        </div>
-                        <!-- <div class="col-6 pe-3 ps-0 pt-3 effectcount text-start">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-lg-2 col-md-4 col-sm-12 col-6">
+        <div class="effectcard">
+          <div class="row justify-content-between">
+            <div class="col-12">
+              <div class="img-overlay">
+                <img
+                  src="{% static '/img/effectdummy.png' %}"
+                  alt="Avatar"
+                  class="img-overlay-image effectdemo"
+                />
+                <div class="overlay text-start">
+                  <div class="text ps-3 pb-3">
+                    <div class="effectname">Effect name</div>
+                    <div class="toolseffect pt-1">
+                      Tools used, about effect in brief
+                    </div>
+                    <div class="pt-2">
+                      <a class="createrprofilelink text-decoration-none"
+                        >View profile
+                        <img
+                          src="{% static '/img/viewprofilearrow.svg' %}"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-3 effectcreatername">
+              <img
+                src="{% static '/img/greydummy.png' %}"
+                class="img-fluid"
+                style="height: 15px; width: auto; position: relative"
+                alt=""
+              />
+              Gunjan Paneri
+            </div>
+            <!-- <div class="col-6 pe-3 ps-0 pt-3 effectcount text-start">
                                     <img src="{% static '/img/likeeffect.svg' %}" class="img-fluid" style="height:20px; width: auto;"
                                         alt=""> 200 &nbsp;
                                     <img src="{% static '/img/vieweffect.svg' %}" class="img-fluid" alt=""> 200
                                 </div> -->
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 <!-- Render footer -->
-{% include 'partials/footer.html' %}
-
-{% endblock %}
-
-{% block scripts %}
+{% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+  integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 {% endblock %}

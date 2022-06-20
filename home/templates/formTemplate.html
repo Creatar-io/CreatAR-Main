@@ -6,72 +6,81 @@
 
 <!-- Import specific stylesheets (If any) -->
 {% block stlyesheets %}
-<link rel="stylesheet" href="{% static '/css/home.css' %}">
-<link rel="stylesheet" href="{% static '/css/media.css' %}">
-<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}">
-{% endblock %}
-
-{% block content %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+{% endblock %} {% block customcontent %}
 <!-- Render navbar -->
 
 <section class="formbg">
-    {% include 'partials/darknavbar.html' %}
-    <div class="container">
-        <div class="row p-lg-5 p-md-4 p-3">
-            <div class="col-12">
-                <div class="formhead">
-                    Registrations Form - CreatAR
-                </div>
-                <div class="formsub">
-                    The Speakers Bureau connects community event organizers with seasoned speakers who
-                    knowledge-share at events in their individual areas of expertise. If you are interested in
-                    getting speaking opportunities, please signup by providing your details in this form.
-                    By providing details in this form, you provide consent for
-                    a) Your profile details given in this form to be used in the Speakers Bureau listing in the
-                    Azure Developer community website
-                    b) Event organizers to reach out to you for inviting you for speaking in their events.
-                </div>
-            </div>
+  {% include 'partials/darknavbar.html' %}
+  <div class="container">
+    <div class="row p-lg-5 p-md-4 p-3">
+      <div class="col-12">
+        <div class="formhead">Registrations Form - CreatAR</div>
+        <div class="formsub">
+          The Speakers Bureau connects community event organizers with seasoned
+          speakers who knowledge-share at events in their individual areas of
+          expertise. If you are interested in getting speaking opportunities,
+          please signup by providing your details in this form. By providing
+          details in this form, you provide consent for a) Your profile details
+          given in this form to be used in the Speakers Bureau listing in the
+          Azure Developer community website b) Event organizers to reach out to
+          you for inviting you for speaking in their events.
         </div>
+      </div>
     </div>
+  </div>
 </section>
 <section class="formform">
-    <div class="container">
-        <div class="row p-lg-5 p-md-4 p-3">
-            <div class="col-12">
-                <div class="module-border-wrap">
-                    <div class="formboxform p-5">
-                        <form>
-                            <div class="mb-4">
-                                <label for="email" class="formlabelform pb-2">Email<span
-                                        class="required">*</span></label>
-                                <input type="email" placeholder="Enter your email" class="contactinput" id="email"
-                                    name="email">
-                            </div>
-                            <div class="mb-4 pb-1">
-                                <label for="password" class="formlabelform pb-2">Password<span
-                                        class="required">*</span></label>
-                                <input type="password"
-                                    placeholder="Enter your password                                   "
-                                    class="contactinput" id="password" name="password">
-                            </div>
-                            <button type="submit" class="px-5 py-1 formbtnform">Button</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row p-lg-5 p-md-4 p-3">
+      <div class="col-12">
+        <div class="module-border-wrap">
+          <div class="formboxform p-5">
+            <form>
+              <div class="mb-4">
+                <label for="email" class="formlabelform pb-2"
+                  >Email<span class="required">*</span></label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="contactinput"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-4 pb-1">
+                <label for="password" class="formlabelform pb-2"
+                  >Password<span class="required">*</span></label
+                >
+                <input
+                  type="password"
+                  placeholder="Enter your password                                   "
+                  class="contactinput"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <button type="submit" class="px-5 py-1 formbtnform">
+                Button
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Render footer -->
-{% include 'partials/loginfooter.html' %}
-
-{% endblock %}
-
-{% block scripts %}
+{% include 'partials/loginfooter.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+  integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 {% endblock %}
