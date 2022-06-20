@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     "django_celery_beat",
     "webshell",
     # 3rd party
-    "social_django",
+    "django.contrib.sites",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
     # Add your modules here
     "core",
     "home",
@@ -61,32 +64,38 @@ REST_FRAMEWORK = {
 SOCIAL_AUTH_URL_NAMESPACE = "social"
 
 AUTHENTICATION_BACKENDS = (
-    "social_core.backends.facebook.FacebookOAuth2",
-    "social_core.backends.twitter.TwitterOAuth",
-    "social_core.backends.github.GithubOAuth2",
     "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
 )
 
-LOGIN_URL = "login"
-LOGOUT_URL = "logout"
+# Use email as the primary identifier
+ACCOUNT_AUTHENTICATION_METHOD = "email"
+ACCOUNT_EMAIL_REQUIRED = True
+
+# Make email verification mandatory to avoid junk email accounts
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+
+# Redirection after login
+LOGIN_REDIRECT_URL = "/creatARproTemp"
+
+# LOGIN_URL = "login"
+# LOGOUT_URL = "logout"
 
 SITE_ID = 1
-ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_REDIRECT_URL = "/dashboard"
-ACCOUNT_LOGOUT_ON_GET = True
+# ACCOUNT_LOGOUT_ON_GET = True
 
-SOCIAL_AUTH_DISCONNECT_PIPELINE = (
-    # Verifies that the social association can be disconnected from the current
-    # user (ensure that the user login mechanism is not compromised by this
-    # disconnection).
-    "social_core.pipeline.disconnect.allowed_to_disconnect",
-    # Collects the social associations to disconnect.
-    "social_core.pipeline.disconnect.get_entries",
-    # Revoke any access_token when possible.
-    "social_core.pipeline.disconnect.revoke_tokens",
-    # Removes the social associations.
-    "social_core.pipeline.disconnect.disconnect",
-)
+# SOCIAL_AUTH_DISCONNECT_PIPELINE = (
+#     # Verifies that the social association can be disconnected from the current
+#     # user (ensure that the user login mechanism is not compromised by this
+#     # disconnection).
+#     "social_core.pipeline.disconnect.allowed_to_disconnect",
+#     # Collects the social associations to disconnect.
+#     "social_core.pipeline.disconnect.get_entries",
+#     # Revoke any access_token when possible.
+#     "social_core.pipeline.disconnect.revoke_tokens",
+#     # Removes the social associations.
+#     "social_core.pipeline.disconnect.disconnect",
+# )
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -105,7 +114,10 @@ ROOT_URLCONF = "creatar.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, "templates"),
+            os.path.join(BASE_DIR, "templates", "allauth"),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -192,6 +204,15 @@ USE_L10N = True
 
 USE_TZ = True
 
+# SMTP Backend Configuration
+# https://ap-south-1.console.aws.amazon.com/ses/home?region=ap-south-1#/account
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "email-smtp.ap-south-1.amazonaws.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "AKIAT4NVYU36SGJCDSFI"
+EMAIL_HOST_PASSWORD = "BOiPz+6NW0jEXyMSlQ20F/C8zj6yYY7+hKb6jj7cJ+cA"
+DEFAULT_FROM_EMAIL = "noreply@creatar.io"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
