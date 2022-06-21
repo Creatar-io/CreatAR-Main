@@ -21,7 +21,6 @@ class PodcatAdmin(admin.ModelAdmin):
 class OrganisationAdmin(admin.ModelAdmin):
     list_display = (
         "created_at",
-        "moderators",
         "brand_name",
         "tag_line",
         "location",

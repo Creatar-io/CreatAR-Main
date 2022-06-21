@@ -14,7 +14,7 @@ class OrganisationModerator(models.Model):
     # For use cases undefined
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
-    # Associated user
+    # Associated user | Check user email_verified to track moderator authenticity
     meta = models.OneToOneField(
         User,
         on_delete=models.CASCADE,

@@ -9,16 +9,28 @@
 <link rel="stylesheet" href="{% static '/css/home.css' %}" />
 <link rel="stylesheet" href="{% static '/css/media.css' %}" />
 <link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+
+<style>
+    .subtitle-text {
+        font-size: 14px;
+    }
+</style>
 {% endblock %} {% block customcontent %}
 
 <!-- Render navbar -->
 {% include 'partials/darknavbar.html' %}
 
 <div class="p-4">
-    <form action="/your-name/" class="signup" method="post" id="register_organisation">
+    <form action="/register/org" class="signup" method="post" id="register_organisation">
         {% csrf_token %}
         {{ form }}
-        <input type="submit" value="Submit">
+        
+        <!-- <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div> -->
+
+        <button type="submit" value="Submit" class="px-5 py-2 w-100 my-4 btn btnsignin">Submit</button>
     </form>
 </div>
 
@@ -28,4 +40,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
     integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Jquery to append styling classes -->
+    <script>
+        $(".helptext").addClass("text-muted");
+        $(".helptext").addClass("subtitle-text");
+
+        $("textarea").addClass("form-control");
+        $("select").addClass("form-control");
+        $("input").addClass("form-control");
+
+        $("#register_organisation label").addClass("mt-4");
+        $("#register_organisation label").addClass("form-label");
+
+        $("#id_brand_logo").css("padding", "0px")
+        $("#id_brand_logo").css("margin", "0px")
+        // $("#id_brand_logo").addClass("margin", "0px")
+
+
+    </script>
 {% endblock %}

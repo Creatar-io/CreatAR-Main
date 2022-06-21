@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from rest_framework.response import Response
+from rest_framework import status
+
 
 # Importing models
 from core.models.podcast import Podcast
@@ -7,7 +10,7 @@ from core.models.podcast import Podcast
 video_id_extractor = lambda x: str(x)[str(x).rindex("=") + 1 :]
 
 # Importing forms
-from core.froms import OrganisationForm
+from core.froms import OrganisationForm, OrganisationModeratorForm
 
 
 def login(request):
@@ -102,6 +105,33 @@ def register_organisation(request):
         form = OrganisationForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
+            print("==#" * 5, "Form Validated.")
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return Response(form.cleaned_data)
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = OrganisationForm()
+
+    return render(request, "register_organisation.html", {"form": form})
+
+
+def register_organisation_moderator(request):
+    """
+    This from collects organisation moderator POC details
+    """
+    user_email = None
+    if request.user.is_authenticated:
+        user_email = request.user.email
+
+    # if this is a POST request we need to process the form data
+    if request.method == "POST":
+        # create a form instance and populate it with data from the request:
+        form = OrganisationModeratorForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
@@ -109,6 +139,10 @@ def register_organisation(request):
 
     # if a GET (or any other method) we'll create a blank form
     else:
-        form = OrganisationForm()
+        form = OrganisationModeratorForm()
 
-    return render(request, "register_organisation.html", {"form": form})
+    return render(
+        request,
+        "register_organisation_moderator.html",
+        {"form": form, "v_email": user_email},
+    )
