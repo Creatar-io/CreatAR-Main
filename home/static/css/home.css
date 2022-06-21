@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   font-family: "Inter", sans-serif;
 }
@@ -720,11 +721,21 @@ h6 {
 
 /* template */
 .formbg {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       rgba(255, 196, 80, 0.9) -2.36%,
       rgba(255, 137, 83, 0.9) 50.76%,
-      rgba(255, 108, 128, 0.9) 97.64%),
+      rgba(255, 108, 128, 0.9) 97.64%
+    ),
     url("/static/img/formbg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.verifybg {
+  font-family: 'Roboto', sans-serif;
+  background: url("/static/img/verifybg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -776,11 +787,13 @@ h6 {
 .module-border-wrap {
   border-radius: 10px;
   position: relative;
-  background: linear-gradient(to right,
-      #f7df89,
-      var(--dark),
-      #fc88b1a7,
-      #fb88b1);
+  background: linear-gradient(
+    to right,
+    #f7df89,
+    var(--dark),
+    #fc88b1a7,
+    #fb88b1
+  );
   padding: 2px;
 }
 
@@ -1074,10 +1087,12 @@ h6 {
 }
 
 .searchbarbtn {
-  background: linear-gradient(99.51deg,
-      #f5d668 13.94%,
-      #fa9f71 54.86%,
-      #fb88b1 94.93%) !important;
+  background: linear-gradient(
+    99.51deg,
+    #f5d668 13.94%,
+    #fa9f71 54.86%,
+    #fb88b1 94.93%
+  ) !important;
   border-radius: 0px 5px 5px 0px !important;
   font-weight: 400 !important;
   font-size: 22px !important;
@@ -1153,9 +1168,11 @@ h6 {
   opacity: 0;
   border-radius: 5px;
   transition: 0.5s ease;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--black) 000 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    var(--black) 000 100%
+  );
 }
 
 .img-overlay:hover .overlay {
@@ -1540,7 +1557,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: #2e3555 !important;
   background-color: #fff !important;
   font-weight: 700 !important;
