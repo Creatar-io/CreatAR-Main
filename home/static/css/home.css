@@ -103,7 +103,8 @@ h6 {
 }
 
 /* Apply style to all inputs and lables in the form */
-#signup_form input {
+#signup_form input,
+#register_organisaton input {
   padding: 0px 10px;
   text-indent: 10px;
   background: var(--white);
@@ -113,7 +114,8 @@ h6 {
   height: 40px;
 }
 
-#signup_form label {
+#signup_form label,
+#register_organisation label {
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
