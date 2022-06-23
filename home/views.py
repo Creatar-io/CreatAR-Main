@@ -12,6 +12,43 @@ video_id_extractor = lambda x: str(x)[str(x).rindex("=") + 1 :]
 # Importing forms
 from core.froms import OrganisationForm, OrganisationModeratorForm
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import authentication, permissions
+from django.contrib.auth.models import User
+
+
+class OrganisationRegistrationHandler(APIView):
+    """
+    Organisation registration handler
+    """
+
+    # authentication_classes = [authentication.TokenAuthentication]
+    # permission_classes = [permissions.IsAdminUser]
+
+    def get(self, request, format=None):
+        """
+        Render form
+        """
+        form = OrganisationForm()
+        return render(request, "register_organisation.html", {"form": form})
+
+    def post(self, request, format=None):
+        """
+        Validate org-registration form, save model, redirect to POC (Org moderator) form
+        """
+        # create a form instance and populate it with data from the request:
+        form = OrganisationForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            print("==#" * 5, "Form Validated.")
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return Response(form.cleaned_data)
+
+        return Response({"msg": "Failed"})
+
 
 def login(request):
     """
@@ -96,26 +133,6 @@ def landing_page(request):
 
     # Render view
     return render(request, "landing_page.html", {"podcasts": podcasts_w_vid})
-
-
-def register_organisation(request):
-    # if this is a POST request we need to process the form data
-    if request.method == "POST":
-        # create a form instance and populate it with data from the request:
-        form = OrganisationForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            print("==#" * 5, "Form Validated.")
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return Response(form.cleaned_data)
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = OrganisationForm()
-
-    return render(request, "register_organisation.html", {"form": form})
 
 
 def register_organisation_moderator(request):
