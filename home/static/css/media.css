@@ -1,4 +1,16 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .emailbg {
+    background: url("/static/img/404img1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
+  .emailbgs {
+    background: url("/static/img/404img1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
   .formhead {
     font-weight: 700;
     font-size: 40px;
@@ -223,6 +235,18 @@
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .emailbg {
+    background: url("/static/img/404img1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
+  .emailbgs {
+    background: url("/static/img/404img1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
   .formhead {
     font-weight: 800;
     font-size: 40px;
@@ -473,6 +497,18 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .emailbg {
+    background: url("/static/img/404img.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
+  .emailbgs {
+    background: url("/static/img/404img1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
   .formhead {
     font-weight: 800;
     font-size: 50px;
