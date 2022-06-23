@@ -54,10 +54,11 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework.authentication.TokenAuthentication",
+        # "rest_framework.authentication.TokenAuthentication",
     ],
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
+        # "rest_framework.permissions.IsAuthenticated",
+        # "rest_framework.permissions.IsAdminUser",
     ],
     "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
 }
@@ -234,3 +235,18 @@ REQUEST_LOGGING_ENABLE_COLORIZE = False
 # allow upload big file
 DATA_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 15  # 15M
 FILE_UPLOAD_MAX_MEMORY_SIZE = DATA_UPLOAD_MAX_MEMORY_SIZE
+
+# Choices for organisation services
+ORGANISATION_SERVICE_CHOICES = [
+    ("FH", "Fashion"),
+    ("MU", "Music"),
+    ("BE", "Beauty"),
+    ("FM", "FMCG"),
+    ("TV", "TV"),
+    ("AM", "Automotive"),
+    ("SP", "Sport"),
+    ("TR", "Travel"),
+    ("FO", "Food"),
+    ("GA", "Gaming"),
+    ("SO", "Social Cause"),
+]

@@ -1,0 +1,64 @@
+<!-- Inherit base template -->
+{% extends "__base.html" %}
+
+<!-- Load all static content -->
+{% load static %}
+
+<!-- Import specific stylesheets (If any) -->
+{% block stlyesheets %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+{% endblock %} {% block customcontent %}
+
+<!-- Render navbar -->
+{% include 'partials/darknavbar.html' %}
+
+<!-- Verified Brand Name -->
+<div class="form-group mb-3 p-4">
+    <label for="exampleInputEmail1" class="mb-1 contactlabel">Point of Contact (POC) for brand:</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1" style="color: black; font-size: 20px;"><i
+                    class="bi bi-building"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" value="Thesurveyproject" disabled readonly>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">Upon verification you'll be the POC and moderator for the
+        verified brand. More moderators can be assigned to delegate brand tasks (Posting jobs, hiring, etc ...) later in
+        settings.</small>
+</div>
+
+<!-- Verified Email Address -->
+<div class="form-group mb-3 p-4">
+    <label for="exampleInputEmail1" class="mb-1 contactlabel">Verified Email Address: </label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1" style="color: green; font-size: 20px;"><i
+                    class="bi bi-patch-check-fill"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" value="{{v_email}}" disabled readonly>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">You can change, add, remove and assign primary email-ids later in
+        settings.</small>
+</div>
+
+<!-- Contact Number collection -->
+<div class="p-4">
+    <form action="/register/orgmoderator" class="signup" method="post" id="register_organisation">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" value="Submit" class="px-5 py-2 w-100 my-4 btn btnsignin">Submit</button>
+    </form>
+</div>
+
+<!-- Render footer -->
+{% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
+<script src="{% static '/js/getblogs.js' %}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock %}

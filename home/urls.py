@@ -14,6 +14,8 @@ from .views import (
     jobDetails,
     brandSettings,
     basicinfobrand,
+    OrganisationRegistrationHandler,
+    register_organisation_moderator,
 )
 
 urlpatterns = [
@@ -30,4 +32,6 @@ urlpatterns = [
     path("brandSettings", brandSettings),
     path("basicinfobrand", basicinfobrand),
 
+    path("register/org", OrganisationRegistrationHandler.as_view()),
+    path("register/orgmoderator", register_organisation_moderator),
 ]

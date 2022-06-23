@@ -1,0 +1,84 @@
+<!-- Inherit base template -->
+{% extends "__base.html" %}
+
+<!-- Load all static content -->
+{% load static %}
+
+<!-- Import specific stylesheets (If any) -->
+{% block stlyesheets %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+
+<style>
+    .subtitle-text {
+        color: azure;
+        opacity: 0.5;
+        font-size: 14px;
+        display: block;
+    }
+</style>
+{% endblock %} {% block customcontent %}
+
+<section class="formbg">
+    <!-- Render NavBar -->
+    {% include 'partials/darknavbar.html' %}
+    <div class="container">
+        <div class="row p-lg-5 p-md-4 p-3">
+            <div class="col-12">
+                <div class="formhead">Brand Registration - CreatAR</div>
+                <div class="formsub">
+                    The Speakers Bureau connects community event organizers with seasoned
+                    speakers who knowledge-share at events in their individual areas of
+                    expertise. If you are interested in getting speaking opportunities,
+                    please signup by providing your details in this form. By providing
+                    details in this form, you provide consent for a) Your profile details
+                    given in this form to be used in the Speakers Bureau listing in the
+                    Azure Developer community website b) Event organizers to reach out to
+                    you for inviting you for speaking in their events.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="formform">
+    <div class="container">
+        <div class="row p-lg-5 p-md-4 p-3">
+            <div class="col-12">
+                <div class="module-border-wrap">
+                    <div class="formboxform p-5">
+                        <form action="/register/org" class="signup" method="post" id="regiter_organisation_form">
+                            {% csrf_token %}
+                            {{ form }}
+                            <button type="submit" value="Submit"
+                                class="px-5 py-2 w-100 my-4 btn formbtnform">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Render footer -->
+{% include 'partials/loginfooter.html' %} {% endblock %} {% block scripts %}
+<script src="{% static '/js/getblogs.js' %}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+    integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Jquery to append styling classes -->
+<script>
+    $(".helptext").addClass("subtitle-text");
+
+    $('textarea,select,input').addClass("form-control");
+
+    $("label").addClass('mt-4 form-label formlabelform');
+
+    $("#id_brand_logo").css("padding", "0px")
+    $("#id_brand_logo").css("margin", "0px")
+
+    $('label').append('<span class="required"> *</span>')
+    // $("#id_brand_logo").addClass("margin", "0px")
+</script>
+{% endblock %}
