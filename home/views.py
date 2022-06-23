@@ -73,7 +73,11 @@ def brandSettings(request):
     '''
     return render(request, "brandsSettings.html")
 
-
+def basicinfobrand(request):
+    '''
+    Render the login page.
+    '''
+    return render(request, "basicinforBrand.html")
         # Get all podcasts
     podcasts = Podcast.objects.all()
     video_ids = [video_id_extractor(podcast.stream_link) for podcast in podcasts]

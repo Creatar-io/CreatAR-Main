@@ -13,6 +13,7 @@ from .views import (
     creatARproTemp,
     jobDetails,
     brandSettings,
+    basicinfobrand,
 )
 
 urlpatterns = [
@@ -27,4 +28,6 @@ urlpatterns = [
     path("creatARproTemp", creatARproTemp),
     path("jobDetails", jobDetails),
     path("brandSettings", brandSettings),
+    path("basicinfobrand", basicinfobrand),
+
 ]
