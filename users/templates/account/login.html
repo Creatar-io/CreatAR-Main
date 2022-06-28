@@ -1,13 +1,19 @@
-{% extends "account/base.html" %}
+{% extends "__base.html" %}
 
 {% load i18n %}
+{% load static %}
 {% load account socialaccount %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-{% block content %}
+<!-- Import specific stylesheets (If any) -->
+{% block stlyesheets %}
+<link rel="stylesheet" href="{% static '/css/home.css' %}" />
+<link rel="stylesheet" href="{% static '/css/media.css' %}" />
+<link rel="stylesheet" href="{% static '/css/hashnode-blog.css' %}" />
+{% endblock %}
 
-<h1>{% trans "Sign In" %}</h1>
+{% block customcontent %}
 
 {% get_providers as socialaccount_providers %}
 
@@ -29,18 +35,76 @@
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p>{% blocktrans %}If you have not created an accountttt yet, then please
-  <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+
 {% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
+<section class="loginbg">
+  {% include 'partials/loginnav.html' %}
+  <div class="container">
+    <div class="row p-lg-5 p-md-2 px-2 pb-md-5 pb-lg-5 pb-5">
+      <div class="col-lg-6 col-12 col-md-5 px-lg-4 px-md-1 px-1">
+        <div class="loginhead pt-5">Welcome back!</div>
+        <div class="loginsub pt-3">
+          Build your website, complete with an online store, blog & client
+          galleries. grow your creative business effortlessly with Pixpabuild
+          your website, complete with an online stor
+        </div>
+        <div class="py-3">
+          <a href="" class="joinlogin px-3 py-2">Join Discord</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 col-md-7">
+        <div class="loginbox px-lg-5 px-md-3 px-3 py-lg-4 py-md-3 py-4">
+          <div class="loginboxhead text-center">Login Now!</div>
+          <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <a class="button secondaryAction forgotpass" style="text-decoration: none;"
+              href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+            <button class="primaryAction btnsignin px-5 py-2 w-100" type="submit">{% trans "Sign In" %}</button>
+          </form>
 
+          <div class="noaccount text-center justify-content-start text-align-center py-3">
+            <p class="text-start">
+              {% blocktrans %}If you have not created an account yet, then please
+              <a href="{{ signup_url }}" class="text-decoration-none redirectunderline ps-1 dark-text">sign up</a>
+              first.{% endblocktrans %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Render footer -->
+{% include 'partials/loginfooter.html' %} {% endblock %} {% block scripts %}
+<script src="{% static '/js/getblogs.js' %}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+  integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Jquery to append styling classes -->
+<script>
+  $(".helptext").addClass("subtitle-text");
+
+  $('textarea,select,:text').addClass("form-control contactinput w-100");
+
+  $(':checkbox').removeClass("contactinput");
+  $(':checkbox').addClass("form-check-input");
+  $("label").addClass('mt-4 form-label contactlabel');
+  $('label[for="id_remember"]').addClass("form-check-label keepme");
+  $('label[for="id_remember"]').removeClass("mt-4 form-label contactlabel");
+
+  $(':checkbox, label[for="id_remember"]').wrapAll("<div class='form-check pb-4'></div>")
+
+
+  $("#id_brand_logo").css("padding", "0px")
+  $("#id_brand_logo").css("margin", "0px")
+
+  $('label').append('<span class="required"> *</span>')
+  // $("#id_brand_logo").addClass("margin", "0px")
+</script>
 {% endblock %}

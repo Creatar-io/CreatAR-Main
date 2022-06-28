@@ -7,8 +7,6 @@ from django.contrib.auth.models import User
 # ====# CONSTANTS #====
 from django.conf import settings
 
-from core.models.organisation import Organisation
-
 
 class OrganisationModerator(models.Model):
     # For use cases undefined
@@ -21,13 +19,17 @@ class OrganisationModerator(models.Model):
         related_name="moderator_of",
     )
 
-    # Moderator of
-    organisation = models.OneToOneField(
-        Organisation, on_delete=models.CASCADE, related_name="moderated_by"
-    )
+    # Position in company
+    position_in_company = models.TextField(blank=True, max_length=200)
 
     # Contact
-    contact_number = models.CharField(max_length=15)
+    contact_number = models.CharField(max_length=15, blank=True)
+
+    # Opt-in
+    conset_for_communication = models.BooleanField(
+        verbose_name="I agree to be contacted later on by team Creatar for verification.",
+        blank=True,
+    )
 
     def __str__(self) -> str:
         return str(self.meta)

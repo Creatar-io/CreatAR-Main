@@ -14,6 +14,7 @@ class OrganisationForm(ModelForm):
             "location",
             "services",
             "about_company",
+            "organization_website"
         ]
 
 
@@ -21,4 +22,9 @@ class OrganisationForm(ModelForm):
 class OrganisationModeratorForm(ModelForm):
     class Meta:
         model = OrganisationModerator
-        fields = ["contact_number"]
+        fields = [
+            "contact_number",
+            "position_in_company",
+            "contact_number",
+            "conset_for_communication",
+        ]

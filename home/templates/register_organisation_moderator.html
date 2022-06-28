@@ -61,4 +61,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
     integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(".helptext").addClass("subtitle-text");
+
+    $('#id_contact_number, #id_position_in_company').addClass("form-control contactinput w-100");
+
+    // $(':checkbox').removeClass("contactinput");
+    // $(':checkbox').addClass("form-check-input");
+    $("label").addClass('mt-4 form-label contactlabel');
+    // $('label[for="id_remember"]').addClass("form-check-label keepme");
+    // $('label[for="id_remember"]').removeClass("mt-4 form-label contactlabel");
+
+    // $(':checkbox, label[for="id_remember"]').wrapAll("<div class='form-check pb-4'></div>")
+
+
+    $("#id_brand_logo").css("padding", "0px")
+    $("#id_brand_logo").css("margin", "0px")
+
+    $('label').append('<span class="required"> *</span>')
+</script>
 {% endblock %}

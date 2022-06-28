@@ -30,53 +30,28 @@
           <div class="loginboxhead text-center">Login Now!</div>
           <form>
             <div class="mb-4">
-              <label for="email" class="contactlabel pb-2"
-                >Email<span class="required">*</span></label
-              >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="contactinput"
-                id="email"
-                name="email"
-              />
+              <label for="email" class="contactlabel pb-2">Email<span class="required">*</span></label>
+              <input type="email" placeholder="Enter your email" class="contactinput" id="email" name="email" />
             </div>
             <div>
-              <label for="password" class="contactlabel pb-2"
-                >Password<span class="required">*</span></label
-              >
-              <input
-                type="password"
-                placeholder="Enter your password                                   "
-                class="contactinput"
-                id="password"
-                name="password"
-              />
+              <label for="password" class="contactlabel pb-2">Password<span class="required">*</span></label>
+              <input type="password" placeholder="Enter your password                                   "
+                class="contactinput" id="password" name="password" />
             </div>
             <div class="mb-4 pt-2 forgotpass">Forgot password?</div>
             <div class="form-check pb-4">
-              <input
-                class="form-check-input"
-                checked
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
               <label class="form-check-label keepme" for="flexCheckDefault">
                 Keep me signed in
               </label>
+              <input class="form-check-input" checked type="checkbox" value="" id="flexCheckDefault" />
             </div>
             <button type="submit" class="px-5 py-2 w-100 btnsignin">
               Sign In
             </button>
           </form>
           <div class="noaccount text-center justify-content-center py-3">
-            Don't have an account?<a
-              href="/register"
-              class="text-decoration-none redirectunderline ps-1 dark-text"
-            >
-              Register</a
-            >
+            Don't have an account?<a href="/register" class="text-decoration-none redirectunderline ps-1 dark-text">
+              Register</a>
           </div>
         </div>
       </div>
@@ -86,10 +61,7 @@
 <!-- Render footer -->
 {% include 'partials/loginfooter.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
   integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-></script>
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endblock %}
