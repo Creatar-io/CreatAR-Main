@@ -182,6 +182,12 @@ def brandSettings(request):
     """
     return render(request, "brandsSettings.html")
 
+def basicinfobrand(request):
+    '''
+    Render the login page.
+    '''
+    return render(request, "basicinforBrand.html")
+        # Get all podcasts
 
 # Create your views here.
 def landing_page(request):

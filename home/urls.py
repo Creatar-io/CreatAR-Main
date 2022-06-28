@@ -13,6 +13,7 @@ from .views import (
     creatARproTemp,
     jobDetails,
     brandSettings,
+    basicinfobrand,
     OrganisationRegistrationHandler,
     OrganisationModeratorRegistrationHandler,
 )
@@ -29,6 +30,8 @@ urlpatterns = [
     path("creatARproTemp", creatARproTemp),
     path("jobDetails", jobDetails),
     path("brandSettings", brandSettings),
+    path("basicinfobrand", basicinfobrand),
+
     path("register/org", OrganisationRegistrationHandler.as_view()),
     path("register/orgmoderator", OrganisationModeratorRegistrationHandler.as_view()),
 ]

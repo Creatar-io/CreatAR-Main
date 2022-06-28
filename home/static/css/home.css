@@ -738,7 +738,7 @@ h6 {
 }
 
 .verifybg {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: url("/static/img/verifybg.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1362,7 +1362,6 @@ h6 {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-
   color: var(--dark);
 }
 
@@ -1673,4 +1672,77 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
   font-size: 12px;
   color: #869ee1;
+}
+
+
+
+.topic404 {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 0.03em;
+  color: #ff6f26;
+}
+
+.topic404s {
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 0.03em;
+  color: #ff6f26;
+}
+
+.content404 {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.03em;
+
+  color: #2e3555;
+}
+
+.orgbtn404 {
+  font-weight: 400;
+  font-size: 18px;
+  background: #f27923;
+  border-radius: 3px;
+  color: #ffffff;
+  border: 0px;
+}
+
+.reportbtn404 {
+  font-weight: 400;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #f27923;
+  color: #f27923;
+}
+
+.emailtext {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  color: #869ee1;
+}
+
+
+.green-text{
+color: #38b000;
+font-weight: 500 !important;
+font-size: 18px !important;
+}
+
+.red-text{
+color: #d90429;
+font-weight: 500 !important;
+font-size: 18px !important;
+}
+
+.blue-text{
+  color: #3a0ca3;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.content404s{
+  font-weight: 500;
+font-size: 22px;
+color: #869EE1;
 }
