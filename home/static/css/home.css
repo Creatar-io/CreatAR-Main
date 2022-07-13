@@ -1674,8 +1674,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #869ee1;
 }
 
-
-
 .topic404 {
   font-weight: 700;
   font-size: 50px;
@@ -1722,27 +1720,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #869ee1;
 }
 
-
-.green-text{
-color: #38b000;
-font-weight: 500 !important;
-font-size: 18px !important;
+.green-text {
+  color: #38b000;
+  font-weight: 500 !important;
+  font-size: 18px !important;
 }
 
-.red-text{
-color: #d90429;
-font-weight: 500 !important;
-font-size: 18px !important;
+.red-text {
+  color: #d90429;
+  font-weight: 500 !important;
+  font-size: 18px !important;
 }
 
-.blue-text{
+.blue-text {
   color: #3a0ca3;
   font-weight: 500 !important;
   font-size: 18px !important;
 }
 
-.content404s{
+.content404s {
   font-weight: 500;
-font-size: 22px;
-color: #869EE1;
+  font-size: 22px;
+  color: #869ee1;
+}
+
+.howwhy {
+  background: #2e3555;
+}
+
+.howit {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #fa9f71;
 }

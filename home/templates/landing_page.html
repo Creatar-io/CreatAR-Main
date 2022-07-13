@@ -30,9 +30,7 @@
     </div>
   </div>
   <section class="testimonials">
-    <div
-      class="inner-testimonials container px-lg-5 px-md-5 pt-5 pt-lg-0 pt-md-0"
-    >
+    <div class="inner-testimonials container px-lg-5 px-md-5 pt-5 pt-lg-0 pt-md-0">
       <div class="owl-carousel row custome_slide px-lg-5" id="slide-testimonal">
         <div class="test_img">
           <div class="main-reviewimage py-3">
@@ -103,11 +101,8 @@
             {% for i in '0123456789'|make_list %}
             <div class="item">
               <figure class="figure">
-                <img
-                  src="https://fakeface.rest/face/view?minimum_age=5{{i}}"
-                  class="figure-img img-fluid rounded"
-                  alt="{{i}}"
-                />
+                <img src="https://fakeface.rest/face/view?minimum_age=5{{i}}" class="figure-img img-fluid rounded"
+                  alt="{{i}}" />
                 <figcaption class="figure-caption">AR Creator.</figcaption>
               </figure>
             </div>
@@ -129,21 +124,14 @@
       </div>
       <div class="col-12">
         <div class="row px-lg-4 py-md-3x p-2 text-start">
-          <div
-            class="owl-carousel owl-carousel1 owl-theme"
-            style="display: flex !important"
-          >
+          <div class="owl-carousel owl-carousel1 owl-theme" style="display: flex !important">
             {% for podcast, v_id in podcasts %}
             <div class="item item2 heightcol py-4">
               <div class="cardactive shadow">
-                <iframe
-                  class="w-100 coveractive"
-                  src="https://www.youtube.com/embed/{{v_id}}"
-                  title="YouTube video player"
-                  frameborder="0"
+                <iframe class="w-100 coveractive" src="https://www.youtube.com/embed/{{v_id}}"
+                  title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
                 <div class="p-3">
                   <div class="cardactivehead">{{ podcast.title }}</div>
                   <div class="cardactivedescrip pt-1">
@@ -151,12 +139,8 @@
                   </div>
 
                   <div class="pt-4 pb-2">
-                    <a
-                      href="{{ podcast.stream_link }}"
-                      target="_blank"
-                      class="cardactivebtn py-2 px-3"
-                      >Watch full video</a
-                    >
+                    <a href="{{ podcast.stream_link }}" target="_blank" class="cardactivebtn py-2 px-3">Watch full
+                      video</a>
                   </div>
                 </div>
               </div>
@@ -225,345 +209,257 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-12 p-3">
-        <img
-          src="{% static '/img/communityimg.svg' %}"
-          class="w-100 joinanimation"
-          alt=""
-        />
+        <img src="{% static '/img/communityimg.svg' %}" class="w-100 joinanimation" alt="" />
       </div>
     </div>
   </div>
 </section>
-<section id="creatARhow" class="creatARhow">
-  <div class="container px-lg-5 pb-lg-3 pt-lg-5 p-md-3 p-3">
-    <div class="row py-5">
-      <div class="col-lg-12 col-md-12 col-12">
-        <div class="headuser color-text-orange pb-4">
-          CreatAR: The way it works
-        </div>
-        <div class="stepshead ps-4">Build your CreatAR profile & portfolio</div>
-        <div class="pt-5">
-          <a href="" class="joinUs px-4 py-2 text-decoration-none">Join Us</a>
-        </div>
-      </div>
-      <!-- <div class="col-lg-5 col-md-12 p-md-5 col-12 p-3">
-                <img src="{% static '/img/videosdummy.png' %}" class="shadow" style="width:100%;height:auto;" class="img-fluid"
-                    alt="">
-            </div> -->
-      <div class="col-12 w-100 p-0">
-        <div class="container">
-          <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber">01</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Sign Up</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber">02</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Create your portfolio</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber">03</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Browse jobs</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber">04</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Get hired or projects</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="creatARbenefit" class="creatARbenefits">
-  <div class="container p-lg-5 p-md-4 p-3">
-    <div class="row">
+<section class="howwhy" id="howwhy">
+  <div class="container justify-content-center p-lg-5 p-3">
+    <div class="row py-5 text-center">
       <div class="col-12">
-        <div class="benefitsARhead pb-3">Benefits</div>
-        <div class="benefitsARsub ps-3">
-          Be a part of growing AR Creatars community
-        </div>
-      </div>
-      <div class="col-12 text-center p-3 pt-5">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitarcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-lg-5 pt-5 pt-md-5">Network</div>
-              <div class="arbenefitsub pt-3">
-                Meet fellow AR Creatars from across the globe & build your
-                network
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitarcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-lg-5 pt-5 pt-md-5">
-                Business Opportunities
-              </div>
-              <div class="arbenefitsub pt-3">
-                Pitch for various brand challenges and requirements
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitarcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-lg-5 pt-5 pt-md-5">
-                Learning opportunities
-              </div>
-              <div class="arbenefitsub pt-3">
-                Learn to manage the community, be resourceful and contribute
-                towards the community objectives.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitarcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-lg-5 pt-5 pt-md-5">
-                Exhibit your work
-              </div>
-              <div class="arbenefitsub pt-3">
-                Reach out to the larger audience with your work.
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="howit">How it works</p>
       </div>
     </div>
   </div>
 </section>
-<section id="brandhow" class="creatARhow">
-  <div class="container pt-lg-5 pb-lg-4 px-lg-5 p-md-3 p-3">
-    <div class="row py-5">
-      <!-- <div class="col-lg-5 col-md-5 col-12 p-3">
-                <img src="{% static '/img/videosdummy.png' %}" class="shadow" style="width:100%;height:auto;" class="img-fluid"
-                    alt="">
-            </div> -->
-      <div class="col-lg-12 col-md-12 col-12 text-end">
-        <div class="headuser color-text-yellow pb-4">
-          Brand: The way it works
+ <!-- <section id="creatARhow" class="creatARhow">
+        <div class="container p-lg-5 p-md-3 p-3">
+            <div class="row py-5">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="headuser color-text-orange pb-4">CreatAR: The way it works</div>
+                    <div class="stepshead ps-4">
+                        Build your CreatAR profile & portfolio
+                    </div>
+                    <div class="pt-5">
+                        <a href="" class="joinUs px-4 py-2 text-decoration-none">Join US</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-12 p-md-5 col-12 p-3">
+                    <img src="/img/videosdummy.png" class="shadow" style="width:100%;height:auto;" class="img-fluid"
+                        alt="">
+                </div>
+                <div class="col-12 w-100 p-0 ">
+                    <ul class="v-effect-link container px-2 pt-5">
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="stepsheadbrand pe-4">Create your Brand Portfolio</div>
-        <div class="pt-5">
-          <a href="" class="joinUsbrand px-4 py-2 text-decoration-none"
-            >Join Us</a
-          >
+    </section>
+    <section id="creatARbenefit" class="creatARbenefits">
+        <div class="container p-lg-5 p-md-4 p-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="benefitsARhead pb-3">
+                        Benefits
+                    </div>
+                    <div class="benefitsARsub ps-3">
+                        Be a part of growing AR Creatars community
+                    </div>
+                </div>
+                <div class="col-12 text-center  p-3 pt-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitarcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    Network
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Meet fellow AR Creatars from across the globe & build your network
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitarcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    Business Opportunities </div>
+                                <div class="arbenefitsub pt-3">
+                                    Pitch for various brand challenges and requirements
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitarcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    heading
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Register and sendthea requestegister andhaj sendequ estegiste rsjsjjand send request
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitarcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    heading
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Register and sendthea requestegister andhaj sendequ estegiste rsjsjjand send request
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-12 w-100 p-0">
-        <div class="container">
-          <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber2">01</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline2.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
+    </section>
+    <section id="brandhow" class="creatARhow">
+        <div class="container p-lg-5 p-md-3 p-3">
+            <div class="row py-5">
+                <div class="col-lg-5 col-md-5 col-12 p-3">
+                    <img src="/img/videosdummy.png" class="shadow" style="width:100%;height:auto;" class="img-fluid"
+                        alt="">
                 </div>
-                <div class="col-8">
-                  <div class="stephead">Sign Up</div>
+                <div class="col-lg-12 col-md-12 col-12 text-end">
+                    <div class="headuser color-text-yellow pb-4">Brand: The way it works
+                    </div>
+                    <div class="stepsheadbrand pe-4">
+                        Create your Brand Portfolio
+                    </div>
+                    <div class="pt-5">
+                        <a href="" class="joinUsbrand px-4 py-2 text-decoration-none">Join US</a>
+                    </div>
+
                 </div>
-              </div>
+                <div class="col-12 w-100 p-0 ">
+                    <ul class="brandlink container px-2 pt-5">
+                        <li class="py-3" value="01">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                        <li class="py-3">
+                            <div class="stephead">Register and send request</div>
+                            <div class="stepdescrip">
+                                Register and send requestegister and send requestegister and send request
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber2">02</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline2.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Create opportunities</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber2">03</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline2.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Browse and evaluate creatArs</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 py-3">
-              <div class="row">
-                <div class="col-2 pt-2 pe-0 linusmber2">04</div>
-                <div class="col-2 pt-1">
-                  <img
-                    src="{% static '/img/stepline2.png' %}"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="stephead">Hire</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="brandbenefit" class="creatARbenefits">
-  <div class="container p-lg-5 p-md-4 p-3">
-    <div class="row">
-      <div class="col-12">
-        <div class="benefitsBrandhead pb-3">Benefits</div>
-        <div class="benefitsBrandsub ps-3">
-          Here are some benefits of joining us
+    </section>
+    <section id="brandbenefit" class="creatARbenefits">
+        <div class="container p-lg-5 p-md-4 p-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="benefitsBrandhead pb-3">
+                        Benefits
+                    </div>
+                    <div class="benefitsBrandsub ps-3">
+                        Here are some benefits of joining us
+                    </div>
+                </div>
+                <div class="col-12 text-center  p-3 pt-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitbrandcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    Access to Creatars
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Amazing talent pool from all over the world who potentially could create amazing AR
+                                    experiences for your brand
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitbrandcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    heading
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Register and sendthea requestegister andhaj sendequ estegiste rsjsjjand send request
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitbrandcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    heading
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Register and sendthea requestegister andhaj sendequ estegiste rsjsjjand send request
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 pt-2">
+                            <div class="benefitbrandcard heightcol p-3">
+                                <img src="/img/benefiticon.png" class="benefiticon" alt="">
+                                <div class="arbenefithead">
+                                    heading
+                                </div>
+                                <div class="arbenefitsub pt-3">
+                                    Register and sendthea requestegister andhaj sendequ estegiste rsjsjjand send request
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-12 text-center p-3 pt-5">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitbrandcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-5">Access to Creatars</div>
-              <div class="arbenefitsub pt-3">
-                Amazing talent pool from all over the world who potentially
-                could create amazing AR experiences for your brand
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitbrandcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-5">heading</div>
-              <div class="arbenefitsub pt-3">
-                Register and sendthea requestegister andhaj sendequ estegiste
-                rsjsjjand send request
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitbrandcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-5">heading</div>
-              <div class="arbenefitsub pt-3">
-                Register and sendthea requestegister andhaj sendequ estegiste
-                rsjsjjand send request
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-md-5 pt-lg-5 py-5 col-12 pt-2">
-            <div class="benefitbrandcard heightcol p-3">
-              <img
-                src="{% static '/img/benefiticon.png' %}"
-                class="benefiticon"
-                alt=""
-              />
-              <div class="arbenefithead pt-5">heading</div>
-              <div class="arbenefitsub pt-3">
-                Register and sendthea requestegister andhaj sendequ estegiste
-                rsjsjjand send request
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section> -->
 
 <!-- Render Contact -->
 {% include 'partials/contact.html' %}
 <!-- Render footer -->
 {% include 'partials/footer.html' %} {% endblock %} {% block scripts %}
 <script src="{% static '/js/getblogs.js' %}" defer></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
   integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-></script>
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endblock %}
