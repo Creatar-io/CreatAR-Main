@@ -211,11 +211,11 @@ USE_TZ = True
 # SMTP Backend Configuration
 # https://ap-south-1.console.aws.amazon.com/ses/home?region=ap-south-1#/account
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "email-smtp.ap-south-1.amazonaws.com"
+EMAIL_HOST = ""
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "AKIAT4NVYU36SGJCDSFI"
-EMAIL_HOST_PASSWORD = "BOiPz+6NW0jEXyMSlQ20F/C8zj6yYY7+hKb6jj7cJ+cA"
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
 DEFAULT_FROM_EMAIL = "noreply@creatar.io"
 
 # Static files (CSS, JavaScript, Images)
